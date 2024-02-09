@@ -1,0 +1,47 @@
+.footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-menu a {
+    transition: 0.3s;
+}
+.footer-menu a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+    scale: 1.1;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon svg {
+  color: gray;
+  font-size: 25px;
+  transition: 0.2s;
+}
+.footer-icon svg:hover {
+  color: white;
+  scale: 1.1;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+  }
+}
