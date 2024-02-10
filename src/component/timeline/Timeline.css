@@ -1,0 +1,24 @@
+.timelineContainer {
+    height: 200vh;
+}
+
+.timelineTrainContainer {
+    position: sticky;
+    top: 0;
+    right: 0;
+    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background:transparent url("/timeline/track.png")
+    repeat-x scroll bottom;
+
+}
+
+.timelineTrainContainer img {
+    /*float: right;*/
+    display: block;
+    max-height: 40rem;
+    max-width: unset;
+    transform: translate(0, -22px);
+}
+
