@@ -68,7 +68,7 @@ function Hero() {
             A GDSC ADGIPS EXCLUSIVE
           </h1>
           <div>
-            <img src="./src/assets/Logo.png" alt="logo" />
+            <img src="./public/assets/Logo.png" alt="logo" />
           </div>
         </div>
       </div>
