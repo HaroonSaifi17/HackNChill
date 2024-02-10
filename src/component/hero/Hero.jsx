@@ -41,22 +41,22 @@ function Hero() {
               onClick={toggleNav}
               className="hidden max-md:flex  items-center z-10  relative"
             >
-              <div className="w-12  flex flex-col justify-center gap-2 items-end">
+              <div className="w-10  flex flex-col justify-center gap-2 items-end">
                 <div
                   className={`h-1 rounded-md w-full  duration-100 bg-white ${
                     navStatus ? "rotate-45 translate-y-3" : ""
                   }`}
                 ></div>
                 <div
-                  className={`h-1 w-[75%] rounded-md  duration-100 bg-white ${
-                    navStatus ? "bg-transparent" : ""
+                  className={`h-1 w-[75%] rounded-md  duration-100${
+                    navStatus ? "bg-transparent" : " bg-white "
                   }`}
                 ></div>
                 <div
-                  className={`h-1 rounded-md w-[50%] bg-white  duration-100 ${
+                  className={`h-1 rounded-md bg-white  duration-100 ${
                     navStatus
                       ? "-rotate-45 w-[100%] -translate-y-3 duration-100"
-                      : ""
+                      : " w-[50%] "
                   }`}
                 ></div>
               </div>
@@ -68,7 +68,7 @@ function Hero() {
             A GDSC ADGIPS EXCLUSIVE
           </h1>
           <div>
-            <img src="./public/assets/Logo.png" alt="logo" />
+            <img src="/assets/Logo.png" alt="logo" />
           </div>
         </div>
       </div>
