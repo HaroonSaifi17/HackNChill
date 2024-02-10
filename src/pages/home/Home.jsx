@@ -1,5 +1,4 @@
 import "./Home.css";
-import Navbar from "./../../component/navbar/Navbar";
 import Hero from "./../../component/hero/Hero";
 import About from "./../../component/about/About";
 import Theme from "./../../component/themes/Themes";
@@ -13,7 +12,6 @@ import Footer from "./../../component/footer/Footer";
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <About />
       <Theme />

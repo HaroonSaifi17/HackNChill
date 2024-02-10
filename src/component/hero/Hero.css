@@ -1,0 +1,21 @@
+.bg-wpr{
+  background-image: url(./src/assets/HeroBackground.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+}
+.animate1{
+   animation: moveleft 40s linear infinite;
+}
+@keyframes moveleft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
