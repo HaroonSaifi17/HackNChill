@@ -4,6 +4,7 @@
   background-position: center;
   background-size: cover;
   background-color: white;
+  max-height: 750px;
 }
 .animate1{
    animation: moveleft 40s linear infinite;

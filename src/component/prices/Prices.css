@@ -1,0 +1,6 @@
+.prices-bg{
+  background-image: url(/assets/PricesBackground.png);
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}

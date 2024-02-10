@@ -20,19 +20,19 @@ function Hero() {
               navStatus ? "right-0" : "-right-[60vw]"
             }`}
           >
-            <a onClick={toggleNav} href="#home">
+            <a className="hover:scale-[1.1] duration-500 " onClick={toggleNav} href="#home">
               Home
             </a>
-            <a onClick={toggleNav} href="">
+            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
               Theme
             </a>
-            <a onClick={toggleNav} href="">
+            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
               Event
             </a>
-            <a onClick={toggleNav} href="">
+            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
               Sponser
             </a>
-            <a onClick={toggleNav} href="">
+            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
               FAQs
             </a>
           </div>
@@ -73,7 +73,7 @@ function Hero() {
         </div>
       </div>
       <div className="absolute bottom-0 left-0 border-t-4 border-b-4 border-black bg-white">
-        <p className="bg-white text-red-700 whitespace-nowrap text-lg animate1">
+        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg animate1">
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>
@@ -106,7 +106,7 @@ function Hero() {
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>
-        </p>
+        </a>
       </div>
     </div>
   );
