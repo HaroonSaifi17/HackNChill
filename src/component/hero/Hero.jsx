@@ -1,22 +1,33 @@
 import "./Hero.css";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Hero() {
   const [navStatus, setNavStatus] = useState(false);
   const toggleNav = () => {
     setNavStatus(!navStatus);
-    if (!navStatus && window.innerWidth <= 850) {
+    if (!navStatus && window.innerWidth <= 770) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
   };
+const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(-window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   return (
     <div id="home" className="bg-wpr overflow-x-hidden relative">
       <div className="h-full max-w-screen-2xl px-[5vw] mx-auto">
         <div className="flex gap-5 justify-end py-8 text-white  max-h-[100px] text-3xl">
           <div
-            className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-red-950 max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-5 justify-between duration-100 max-md:top-0 ${
+            className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-5 justify-between duration-100 max-md:top-0 ${
               navStatus ? "right-0" : "-right-[60vw]"
             }`}
           >
@@ -72,8 +83,8 @@ function Hero() {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 border-t-4 border-b-4 border-black bg-white">
-        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg animate1">
+      <div  style={{ left: `${scrollPosition}px`}} className="absolute bottom-0  border-t-4 border-b-4 border-black bg-white">
+        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg ">
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>
           <span className="mx-2"> &#8226; Registor Now</span>

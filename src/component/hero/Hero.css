@@ -4,7 +4,11 @@
   background-position: center;
   background-size: cover;
   background-color: white;
-  max-height: 750px;
+}
+@media(min-width: 768px){
+   .bg-wpr{
+    min-width: 800px;
+  }
 }
 .animate1{
    animation: moveleft 40s linear infinite;
