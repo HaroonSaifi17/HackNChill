@@ -8,7 +8,7 @@
   height: 100vh;
   max-width: 100vw;
   overflow: hidden;
-  background-image: url(assets/StarBackground.png);
+  background-image: url(/assets/StarBackground.png);
 }
 .train{
   background-image: url(/timeline/train.png);
@@ -16,7 +16,7 @@
   background-size: cover;
   margin-left: -1000px;
   width: 2000px;
-  height: 80vh;
+  height: 60vh;
 }
 .track{
   width: 100vw;
