@@ -3,7 +3,7 @@ import React from "react";
 
 function Prices() {
   return (
-    <div className="prices-bg">
+    <div id="prizes" className="prices-bg">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-16">
         <h3 className="text-center text-6xl font-semibold text-white">
           PRIZES
@@ -11,7 +11,7 @@ function Prices() {
         <div className="flex justify-around items-center max-md:flex-col gap-5 mt-12 max-md:mb-0  mb-[200px]">
           <div className="order-2 max-md:order-1 flex-col flex items-center gap-5 ">
             <div className="inline-block mx-auto  w-52 h-52 border-white border-[12px] rounded-md"></div>
-            <h1 className="text-white text-4xl font-semibold">#2</h1>
+            <h1 className="text-white text-4xl font-semibold">#1</h1>
             <p className="text-white text-center">Our premium product with top-notch performance and durability. Ideal for demanding tasks and long-term use.</p>
           </div>
           <div className="mb-[-200px] max-md:mb-0 justify-start flex-col flex gap-5 items-center  order-1 max-md:order-2">
@@ -27,7 +27,7 @@ function Prices() {
                 strokeWidth="6"
               />
             </svg>
-            <h1  className="text-white text-4xl font-semibold">#1</h1>
+            <h1  className="text-white text-4xl font-semibold">#2</h1>
             <p className="text-white text-center">This is a high-quality product with advanced features. It's perfect for professionals and enthusiasts alike.</p>
           </div>
           <div className="mb-[-200px] flex-col flex items-center gap-6 max-md:mb-0 order-3">

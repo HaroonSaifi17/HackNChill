@@ -11,15 +11,15 @@ function Hero() {
       document.body.style.overflow = "auto";
     }
   };
-const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(-window.scrollY);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -31,19 +31,39 @@ const [scrollPosition, setScrollPosition] = useState(0);
               navStatus ? "right-0" : "-right-[60vw]"
             }`}
           >
-            <a className="hover:scale-[1.1] duration-500 " onClick={toggleNav} href="#home">
+            <a
+              className="hover:scale-[1.1] duration-500 "
+              onClick={toggleNav}
+              href="#home"
+            >
               Home
             </a>
-            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
+            <a
+              className="hover:scale-[1.1] duration-500 "
+              onClick={toggleNav}
+              href="#theme"
+            >
               Theme
             </a>
-            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
+            <a
+              className="hover:scale-[1.1] duration-500 "
+              onClick={toggleNav}
+              href="#event"
+            >
               Event
             </a>
-            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
+            <a
+              className="hover:scale-[1.1] duration-500 "
+              onClick={toggleNav}
+              href="#sponser"
+            >
               Sponser
             </a>
-            <a className="hover:scale-[1.1] duration-500 "  onClick={toggleNav} href="">
+            <a
+              className="hover:scale-[1.1] duration-500 "
+              onClick={toggleNav}
+              href="#help"
+            >
               FAQs
             </a>
           </div>
@@ -83,40 +103,43 @@ const [scrollPosition, setScrollPosition] = useState(0);
           </div>
         </div>
       </div>
-      <div  style={{ left: `${scrollPosition}px`}} className="absolute bottom-0  border-t-4 border-b-4 border-black bg-white">
+      <div
+        style={{ left: `${scrollPosition}px` }}
+        className="absolute bottom-0  border-t-4 border-b-4 border-black bg-white"
+      >
         <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg ">
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
-          <span className="mx-2"> &#8226; Registor Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
+          <span className="mx-2"> &#8226; Register Now</span>
         </a>
       </div>
     </div>

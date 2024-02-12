@@ -5,7 +5,7 @@ function Timeline() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
-    const targetDiv = document.getElementById('time-wpr');
+    const targetDiv = document.getElementById('timeline');
     const handleScroll = () => {
       const position = -targetDiv.getBoundingClientRect().top
       if(position<1000 && position>0)
@@ -18,7 +18,7 @@ function Timeline() {
   }, []);
 
   return (
-    <div id="time-wpr" className="timeline-wpr">
+    <div id="timeline" className="timeline-wpr">
       <div>
         <h2 className="text-white text-4xl text-center w-full py-5 px-[5vw]">TIMELINE</h2>
         <div className="h-[10vh]"></div>

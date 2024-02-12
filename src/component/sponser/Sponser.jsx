@@ -3,7 +3,7 @@ import React from "react";
 
 function Sponser() {
   return (
-    <div className="bg-black pb-10 sm:pb-20">
+    <div id="sponser" className="bg-black pb-10 sm:pb-20">
       <div className="flex text-3xl sm:text-5xl justify-center py-6 sm:py-10">
         <div className="bg-gradient-to-r from-gray-500 to-white text-transparent bg-clip-text">
           MEET OUR

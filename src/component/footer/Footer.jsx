@@ -13,6 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className="footer">
+      <img className="w-[300px] mx-auto p-8" src="/assets/Logo.png" alt="" />
       <div>
         <div>
           <h1 className="text-red-700 text-2xl md:text-3xl font-bold border-b-2 border-b-white pb-5 md:pr-5">
@@ -20,15 +21,15 @@ const Footer = () => {
           </h1>
         </div>
         <div className="footer-menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Timeline</a>
-          <a href="#">FAQs</a>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#help">FAQs</a>
         </div>
         <div className="footer-menu">
-          <a href="#">Sponsors</a>
-          <a href="#">Prizes</a>
-          <a href="#">Events</a>
+          <a href="#sponser">Sponsors</a>
+          <a href="#prizes">Prizes</a>
+          <a href="#event">Events</a>
         </div>
         <div className="footer-menu md:items-start md:gap-4">
           <h2 className="font-semibold text-lg">EXPLORE US!</h2>

@@ -3,7 +3,7 @@ import React from "react";
 
 function About() {
   return (
-    <div className="bg-black">
+    <div id="about" className="bg-black">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-16">
         <h3 className="text-center text-3xl font-semibold text-white">
           ABOUT HACK & CHILL
