@@ -1,53 +1,31 @@
-import './Timeline.css'
-import React, {useCallback, useEffect, useLayoutEffect, useRef, useState} from 'react'
-import {MotionContext, useScroll, useSpring, useTransform, motion} from "framer-motion";
-
+import { useEffect, useState } from "react";
+import "./Timeline.css";
 
 function Timeline() {
-    const sticky = useRef(null);
-    const stickyParent = useRef(null);
-    const [scrollLeft, setScrollLeft] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-    useEffect(() => {
-        sticky.current.scrollLeft = 2500 - scrollLeft;
-        console.log(scrollLeft)
-        // sticky.current.scrollLeft = -scrollLeft;
-    }, [scrollLeft]);
+  useEffect(() => {
+    const targetDiv = document.getElementById('time-wpr');
+    const handleScroll = () => {
+      const position = -targetDiv.getBoundingClientRect().top
+      if(position<1000 && position>0)
+      setScrollPosition(position);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
-    useEffect(() => {
-        let scrollWidth = sticky.current.scrollWidth;
-        let verticalScrollHeight = stickyParent.current.getBoundingClientRect().height-sticky.current.getBoundingClientRect().height;
-
-        function horizontalScroll() {
-
-            let stickyPosition = sticky.current.getBoundingClientRect().top;
-            if(stickyPosition > 1) return;
-            else{
-                let scrolled = stickyParent.current.getBoundingClientRect().top;
-                setScrollLeft((scrollWidth/verticalScrollHeight)*(-scrolled)*2.5);
-                // console.log(sticky.current.scrollLeft);
-            }
-        }
-
-        document.addEventListener('scroll', horizontalScroll);
-        return () => {document.removeEventListener('scroll', horizontalScroll);}
-    }, []);
-
-    return (
-        <>
-            <h1 className={"text-center text-4xl"}>TIMELINE</h1>
-            <div>
-                <div ref={stickyParent} className={"timelineContainer"}>
-                    <div ref={sticky} className={"timelineTrainContainer"}>
-                        <img src={"/timeline/train.png"}/>
-                    </div>
-                </div>
-            </div>
-
-            <div style={{height: "50px", width: "100vw"}}/>
-        </>
-
-    )
+  return (
+    <div id="time-wpr" className="timeline-wpr">
+      <div>
+        <h2 className="text-white text-4xl text-center w-full py-5 px-[5vw]">TIMELINE</h2>
+        <div style={{ transform: `translateX(${scrollPosition}px)` }} className="train"></div>
+        <div className="track"></div>
+      </div>
+    </div>
+  );
 }
 
-export default Timeline
+export default Timeline;

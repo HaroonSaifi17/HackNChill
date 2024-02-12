@@ -4,15 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 *{
   margin: 0;
   padding: 0;
   font-family: 'Ubuntu', sans-serif;
-}
-
-body {
-  background-color: black;
-  color: white;
 }

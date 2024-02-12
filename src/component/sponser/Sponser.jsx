@@ -17,56 +17,56 @@ function Sponser() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-14 ">
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
           </div>
           <div className="h-64 w-64 lg:w-44 lg:h-44  cursor-pointer bg-line">
             <img
-              src=""
+              src="https://placehold.co/400"
               alt="sponsor_image"
               className="h-full bg-white w-full object-cover translate-x-2 -translate-y-2"
             />
