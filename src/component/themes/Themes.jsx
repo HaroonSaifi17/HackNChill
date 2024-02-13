@@ -20,9 +20,9 @@ function Themes() {
           const cardRect = card.getBoundingClientRect();
           const cardCenter = cardRect.left + cardRect.width / 2;
           const distanceFromCenter = Math.abs(cardCenter - center);
-          const maxScaleFactor = 1.3;
-          const scaleFactor =
-            1 - (distanceFromCenter / center) * (maxScaleFactor - 1);
+          const maxScaleFactor = 1.4;
+const scaleFactor = Math.min(1, 1 - (distanceFromCenter / (center*1.5)) * (maxScaleFactor - 1));
+
           card.style.transform = `scale(${scaleFactor})`;
         });
       }
@@ -46,9 +46,9 @@ function Themes() {
         </h2>
         <div
           ref={scrollRef}
-          className="overflow-x-scroll max-md:gap-1 flex gap-4 w-[100vw] hide-scroll mt-5 snap-x snap-mandatory"
+          className="overflow-x-scroll max-md:gap-0 flex gap-4 w-[100vw] hide-scroll mt-5 snap-x snap-mandatory"
         >
-          <div className="w-[250px] duration-75 flex-grow-1 flex-shrink-0 overflow-hidden snap-center rounded-3xl">
+          <div className="w-[250px] bg-white max-md:mx-[-15px] duration-75 flex-grow-1 flex-shrink-0 overflow-hidden snap-center rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -62,7 +62,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px]  duration-75  flex-grow-1 flex-shrink-0  overflow-hidden snap-center  rounded-3xl">
+          <div className="w-[250px]  bg-white  max-md:mx-[-15px]  duration-75  flex-grow-1 flex-shrink-0  overflow-hidden snap-center  rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -76,7 +76,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px] duration-75   flex-grow-1 flex-shrink-0  overflow-hidden snap-center  rounded-3xl">
+          <div className="w-[250px] bg-white  max-md:mx-[-15px]  duration-75   flex-grow-1 flex-shrink-0  overflow-hidden snap-center  rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -90,7 +90,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px]  duration-75 overflow-hidden   flex-grow-1 flex-shrink-0  snap-center rounded-3xl">
+          <div className="w-[250px] bg-white  max-md:mx-[-15px]   duration-75 overflow-hidden   flex-grow-1 flex-shrink-0  snap-center rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -104,7 +104,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px] overflow-hidden duration-75   flex-grow-1 flex-shrink-0  snap-center  rounded-3xl">
+          <div className="w-[250px]  bg-white  max-md:mx-[-15px] overflow-hidden duration-75   flex-grow-1 flex-shrink-0  snap-center  rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -118,7 +118,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px] overflow-hidden  duration-75  flex-grow-1 flex-shrink-0  snap-center  rounded-3xl">
+          <div className="w-[250px] bg-white  max-md:mx-[-15px]  overflow-hidden  duration-75  flex-grow-1 flex-shrink-0  snap-center  rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
@@ -132,7 +132,7 @@ function Themes() {
               fugit mollitia assumenda quia illum dolorum corporis maxime eaque
             </p>
           </div>
-          <div className="w-[250px] overflow-hidden  flex-grow-1  duration-75 flex-shrink-0  snap-center  rounded-3xl">
+          <div className="w-[250px] bg-white  max-md:mx-[-15px]  overflow-hidden  flex-grow-1  duration-75 flex-shrink-0  snap-center  rounded-3xl">
             <img
               className="w-[250px] h-[150px] object-cover"
               src="https://placehold.co/250x150"
