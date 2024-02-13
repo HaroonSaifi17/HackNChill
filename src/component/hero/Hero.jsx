@@ -1,5 +1,6 @@
 import "./Hero.css";
 import React, { useEffect, useState } from "react";
+import RegisterNow from "./registerNow/RegisterNow.jsx";
 
 function Hero() {
   const [navStatus, setNavStatus] = useState(false);
@@ -104,42 +105,11 @@ function Hero() {
         </div>
       </div>
       <div
-        style={{ left: `${scrollPosition / 2}px` }}
-        className="absolute bottom-0  border-t-4 border-b-4 border-black bg-white"
+        // style={{ left: `${scrollPosition / 2}px` }}
+        className="absolute bottom-0 border-t-4 border-b-4 border-black bg-white w-screen"
       >
         <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg ">
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
-          <span className="mx-2"> &#8226; Register Now</span>
+          <RegisterNow />
         </a>
       </div>
     </div>
