@@ -11,6 +11,7 @@
   background-image: url(/assets/StarBackground.png);
 }
 .train{
+  position: relative;
   background-image: url(/timeline/train.png);
   background-position:center;
   background-size: cover;

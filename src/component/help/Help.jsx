@@ -59,7 +59,7 @@ function Help() {
               />
             </a>
             {answersVisible["eligible"] && (
-              <div className="px-4 py-2 bg-gray-200 text-gray-500">
+              <div className="px-4 py-2 bg-gray-100 rounded-b-md text-gray-500">
                 <p>
                   The answer to the question "Who's eligible to participate?"
                   goes here.
@@ -81,7 +81,7 @@ function Help() {
               />
             </a>
             {answersVisible["participate"] && (
-              <div className="px-4 py-2 bg-gray-200 text-gray-500">
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
                 <p>
                   The answer to the question "How to participate?" goes here.
                 </p>
@@ -110,7 +110,7 @@ function Help() {
               />
             </a>
             {answersVisible["error"] && (
-              <div className="px-4 py-2 bg-gray-200 text-gray-500">
+              <div className="px-4 py-2   bg-gray-100 rounded-b-md text-gray-500">
                 <p>
                   The answer to the question "Who's eligible to participate?"
                   goes here.
@@ -133,7 +133,7 @@ function Help() {
               />
             </a>
             {answersVisible["criteria"] && (
-              <div className="px-4 py-2 bg-gray-200 text-gray-500">
+              <div className="px-4 py-2 bg-gray-100 rounded-b-md  text-gray-500">
                 <p>
                   The answer to the question "How to participate?" goes here.
                 </p>

@@ -20,12 +20,11 @@ function Event() {
   ];
 
   const handleCardClick = (card) => {
-    console.log(`Selected card: ${card.id}`);
     setSelectedCard(card);
   };
   return (
     <>
-      <div className="page-layout">
+      <div id="event" className="page-layout">
         <div className="card-layout">
           <div className="selected-card-content">
             <h3 className="event-title">EVENTS</h3>
@@ -51,7 +50,7 @@ function Event() {
                   className="individual-card-container"
                   style={{
                     backgroundColor:
-                      selectedCard.id === card.id ? "#8B0000" : "#4d4d4d",
+                      selectedCard.id === card.id ? "#8B0000" : "#1f2937",
                   }}
                 >
                   <Card

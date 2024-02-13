@@ -22,7 +22,11 @@ function Timeline() {
       <div>
         <h2 className="text-white text-4xl text-center w-full py-5 px-[5vw]">TIMELINE</h2>
         <div className="h-[10vh]"></div>
-        <div style={{ transform: `translateX(${scrollPosition}px)` }} className="train"></div>
+        <div style={{ transform: `translateX(${scrollPosition}px)` }} className="train">
+          <div className="absolute text-white top-0 right-[1080px] font-semibold text-xl text-center">Registration Start <br/> <span className="font-normal text-md">10 March 2023</span></div>
+          <div className="absolute text-white top-0 right-[1420px] font-semibold text-xl text-center">Registration End<br/> <span className="font-normal text-md">30 March 2023</span></div>
+          <div className="absolute text-white top-0 left-20 font-semibold text-xl text-center">Event Start<br/> <span className="font-normal text-md">31 March 2023</span></div>
+        </div>
         <div className="track"></div>
       </div>
     </div>

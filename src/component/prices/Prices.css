@@ -1,6 +1,12 @@
-.prices-bg{
+.prices-bg {
   background-image: url(/assets/PricesBackground.png);
   background-position: center;
   background-size: cover;
   background-color: black;
+}
+
+@media (max-width: 768px) {
+  .order11 {
+    order: 1 !important;
+  }
 }
