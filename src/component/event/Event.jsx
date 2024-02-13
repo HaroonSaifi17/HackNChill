@@ -51,7 +51,7 @@ function Event() {
                   className="individual-card-container"
                   style={{
                     backgroundColor:
-                      selectedCard.id === card.id ? "	#8B0000" : "#4d4d4d",
+                      selectedCard.id === card.id ? "#8B0000" : "#4d4d4d",
                   }}
                 >
                   <Card
