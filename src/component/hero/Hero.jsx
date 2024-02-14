@@ -121,60 +121,54 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-5 h-full max-md:flex-col">
-          <div className="flex-1 flex justify-center items-center flex-col max-md:justify-end">
-            <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold mb-6 ">
-              A GDSC ADGIPS EXCLUSIVE
-            </h1>
-            <div>
-              <img src="/assets/Logo.png" alt="logo" />
-            </div>
-            <a
-              className="px-4 py-2 rounded-full bg-white text-black font-semibold inline-block mt-4"
-              href=""
-            >
-              Apply-With-Devfolio
-            </a>
+        <div className="flex justify-center items-center gap-4 h-full flex-col">
+          <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold  ">
+            A GDSC ADGIPS EXCLUSIVE
+          </h1>
+          <div className="max-w-[500px]">
+            <img src="/assets/Logo.png" alt="logo" />
           </div>
-          <div className="flex-1 flex flex-col justify-center gap-3 items-center max-md:justify-start">
-                <h4 className="text-4xl text-center text-white uppercase font-semibold">See You In</h4>
+          <a
+            className="px-4 py-2 rounded-full bg-white text-black font-semibold inline-block "
+            href=""
+          >
+            Apply-With-Devfolio
+          </a>
+          <div className="mt-6">
+            {" "}
             {Object.entries(timeLeft).length === 0 ? (
               <span className="text-4xl text-white">Countdown expired!</span>
             ) : (
-                <div className="flex  max-md:gap-1 gap-2 text-center">
-                    <span className="bg-white w-[70px] p-2">
-                    <span className="text-2xl font-semibold">
-                    {days}
-                    </span>
-                    <br/>Days
-                  </span>
-                    <span className="bg-white  w-[70px] p-2">
-                    <span className="text-2xl font-semibold">
-                    {hours}
-                    </span>
-                    <br/>Hours
-                  </span>
-                    <span className="bg-white  w-[70px] p-2">
-                    <span className="text-2xl font-semibold">
-                    {minutes}
-                    </span>
-                    <br/>Minutes
-                  </span>
-                    <span className="bg-white  w-[70px] p-2">
-                    <span className="text-2xl font-semibold">
-                    {seconds}
-                    </span>
-                    <br/>seconds
-                  </span>
-                </div>
+              <div className="flex  max-md:gap-1 gap-2 text-center">
+                <span className="bg-white w-[70px] p-2">
+                  <span className="text-2xl font-semibold">{days}</span>
+                  <br />
+                  Days
+                </span>
+                <span className="bg-white  w-[70px] p-2">
+                  <span className="text-2xl font-semibold">{hours}</span>
+                  <br />
+                  Hours
+                </span>
+                <span className="bg-white  w-[70px] p-2">
+                  <span className="text-2xl font-semibold">{minutes}</span>
+                  <br />
+                  Minutes
+                </span>
+                <span className="bg-white  w-[70px] p-2">
+                  <span className="text-2xl font-semibold">{seconds}</span>
+                  <br />
+                  seconds
+                </span>
+              </div>
             )}
           </div>
         </div>
-      <div  className="absolute bottom-0 left-0 border-black border-2">
-        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
-          <RegisterNow />
-        </a>
-      </div>
+        <div className="absolute bottom-0 left-0 border-black border-2">
+          <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
+            <RegisterNow />
+          </a>
+        </div>
       </div>
     </div>
   );

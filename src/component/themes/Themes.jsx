@@ -49,6 +49,7 @@ function Themes() {
   const [select, setSelect] = useState(Math.floor(themes.length / 2));
   const scrollRef = useRef(null);
   let scrollLength = 0;
+  let padding = window.innerWidth / 2 - 125;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -61,7 +62,7 @@ function Themes() {
         const cards = scrollRef.current.querySelectorAll(".snap-center");
         const center = windowWidth / 2;
         scrollLength = scrollRef.current.scrollLeft;
-        cards.forEach((card,index) => {
+        cards.forEach((card, index) => {
           const cardRect = card.getBoundingClientRect();
           const cardCenter = cardRect.left + cardRect.width / 2;
           const distanceFromCenter = Math.abs(cardCenter - center);
@@ -70,8 +71,8 @@ function Themes() {
             1,
             1 - (distanceFromCenter / (center * 1.5)) * (maxScaleFactor - 1)
           );
-          if(scaleFactor>0.99){
-            setSelect(index)
+          if (scaleFactor > 0.99) {
+            setSelect(index);
           }
           card.style.transform = `scale(${scaleFactor})`;
         });
@@ -96,7 +97,25 @@ function Themes() {
         </h2>
         <div
           ref={scrollRef}
-          className="overflow-x-scroll max-md:gap-0 flex gap-4 w-[100vw] hide-scroll mt-5 snap-x snap-mandatory"
+          style={{
+            paddingLeft:
+              window.innerWidth < 1024
+                ? padding + 10 * themes.length + "px"
+                : window.innerWidth < 768
+                ? padding + 15 * themes.length + "px"
+                : window.innerWidth < 640
+                ? padding + 20 * themes.length + "px"
+                : padding + "px",
+            paddingRight:
+              window.innerWidth < 1024
+                ? padding + 10 * themes.length + "px"
+                : window.innerWidth < 768
+                ? padding + 15 * themes.length + "px"
+                : window.innerWidth < 640
+                ? padding + 20 * themes.length + "px"
+                : padding + "px",
+          }}
+          className={`overflow-x-scroll max-md:gap-0 flex gap-4 w-[100vw] hide-scroll mt-5 snap-x snap-mandatory`}
         >
           {themes.map((item, index) => {
             return (

@@ -35,7 +35,7 @@ function Help() {
               <span className="flex-1">
                 <input
                   placeholder="Email"
-                  className="w-full px-4 py-2 rounded-l-lg "
+                  className="w-full focus:outline-none hover:outline-none  px-4 py-2 rounded-l-lg "
                   type="text"
                 />
               </span>
