@@ -9,14 +9,35 @@ function Event() {
     id: 1,
     title: "Card 1",
     content: "Content for Card 1",
+    img: "https://placehold.it/1000",
   };
   const [selectedCard, setSelectedCard] = useState(initialSelectedCard);
 
   const cards = [
-    { id: 1, title: "Card 1", content: "Content for Card 1" },
-    { id: 2, title: "Card 2", content: "Content for Card 2" },
-    { id: 3, title: "Card 3", content: "Content for Card 3" },
-    { id: 4, title: "Card 4", content: "Content for Card 4" },
+    {
+      id: 1,
+      title: "Card 1",
+      content: "Content for Card 1",
+      img: "https://placehold.it/1000",
+    },
+    {
+      id: 2,
+      title: "Card 2",
+      content: "Content for Card 2",
+      img: "https://placehold.it/1000",
+    },
+    {
+      id: 3,
+      title: "Card 3",
+      content: "Content for Card 3",
+      img: "https://placehold.it/1000",
+    },
+    {
+      id: 4,
+      title: "Card 4",
+      content: "Content for Card 4",
+      img: "https://placehold.it/1000",
+    },
   ];
 
   const handleCardClick = (card) => {
@@ -30,9 +51,14 @@ function Event() {
             <h3 className="event-title">EVENTS</h3>
             {selectedCard && (
               <div>
-                <Card className="selected-card-details">
+                <Card
+                  className="selected-card-details bg-center bg-cover"
+                  style={{ backgroundImage: `url(${selectedCard.img})` }}
+                >
                   <Card.Body>
-                    <Card.Title>{selectedCard.title}</Card.Title>
+                    <Card.Title className="text-4xl font-semibold text-red-950 uppercase">
+                      {selectedCard.title}
+                    </Card.Title>
                     <Card.Text>{selectedCard.content}</Card.Text>
                   </Card.Body>
                 </Card>
@@ -54,13 +80,14 @@ function Event() {
                   }}
                 >
                   <Card
-                    className={`cursor-pointer individual-cards ${
+                    style={{ backgroundImage: `url(${card.img})` }}
+                    className={`cursor-pointer bg-center individual-cards bg-cover ${
                       selectedCard.id === card.id ? "border-primary" : ""
                     }`}
                     onClick={() => handleCardClick(card)}
                   >
                     <Card.Body>
-                      <Card.Title>{card.title}</Card.Title>
+                      <Card.Title className="text-red-950 font-semibold">{card.title}</Card.Title>
                       <Card.Text>{card.content}</Card.Text>
                     </Card.Body>
                   </Card>

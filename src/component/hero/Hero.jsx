@@ -23,12 +23,38 @@ function Hero() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const targetDate = "2025-02-28T00:00:00";
+  const calculateTimeLeft = () => {
+    const difference = +new Date(targetDate) - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [targetDate]);
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  const { days, hours, minutes, seconds } = timeLeft;
   return (
     <div id="home" className="bg-wpr overflow-x-hidden relative">
-      <div className="h-full max-w-screen-2xl px-[5vw] mx-auto">
-        <div className="flex gap-5 justify-end py-8 text-white  max-h-[100px] text-3xl">
+      <div className="h-full max-w-screen-2xl px-[5vw] mx-auto flex justify-center items-center relative">
+        <div className="flex gap-4 absolute top-0 left-0  px-[5vw] w-full justify-end py-8 text-white  max-h-[100px] text-2xl">
           <div
-            className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-5 justify-between duration-100 max-md:top-0 ${
+            className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
               navStatus ? "right-0" : "-right-[60vw]"
             }`}
           >
@@ -68,7 +94,7 @@ function Hero() {
               FAQs
             </a>
           </div>
-          <div>
+          <div className="md:ml-[-18px]">
             <a
               onClick={toggleNav}
               className="hidden max-md:flex  items-center z-10  relative"
@@ -95,22 +121,60 @@ function Hero() {
             </a>
           </div>
         </div>
-        <div className="flex justify-center items-center flex-col -mt-[100px] h-full">
-          <h1 className="text-white text-center text-2xl font-semibold mb-16">
-            A GDSC ADGIPS EXCLUSIVE
-          </h1>
-          <div>
-            <img src="/assets/Logo.png" alt="logo" />
+        <div className="flex justify-center items-center gap-5 h-full max-md:flex-col">
+          <div className="flex-1 flex justify-center items-center flex-col max-md:justify-end">
+            <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold mb-6 ">
+              A GDSC ADGIPS EXCLUSIVE
+            </h1>
+            <div>
+              <img src="/assets/Logo.png" alt="logo" />
+            </div>
+            <a
+              className="px-4 py-2 rounded-full bg-white text-black font-semibold inline-block mt-4"
+              href=""
+            >
+              Apply-With-Devfolio
+            </a>
+          </div>
+          <div className="flex-1 flex flex-col justify-center gap-3 items-center max-md:justify-start">
+                <h4 className="text-4xl text-center text-white uppercase font-semibold">See You In</h4>
+            {Object.entries(timeLeft).length === 0 ? (
+              <span className="text-4xl text-white">Countdown expired!</span>
+            ) : (
+                <div className="flex  max-md:gap-1 gap-2 text-center">
+                    <span className="bg-white w-[70px] p-2">
+                    <span className="text-2xl font-semibold">
+                    {days}
+                    </span>
+                    <br/>Days
+                  </span>
+                    <span className="bg-white  w-[70px] p-2">
+                    <span className="text-2xl font-semibold">
+                    {hours}
+                    </span>
+                    <br/>Hours
+                  </span>
+                    <span className="bg-white  w-[70px] p-2">
+                    <span className="text-2xl font-semibold">
+                    {minutes}
+                    </span>
+                    <br/>Minutes
+                  </span>
+                    <span className="bg-white  w-[70px] p-2">
+                    <span className="text-2xl font-semibold">
+                    {seconds}
+                    </span>
+                    <br/>seconds
+                  </span>
+                </div>
+            )}
           </div>
         </div>
-      </div>
-      <div
-        // style={{ left: `${scrollPosition / 2}px` }}
-        className="absolute bottom-0 border-t-4 border-b-4 border-black bg-white w-screen"
-      >
-        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap text-lg ">
+      <div  className="absolute bottom-0 left-0 border-black border-2">
+        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
           <RegisterNow />
         </a>
+      </div>
       </div>
     </div>
   );

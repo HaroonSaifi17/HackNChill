@@ -46,11 +46,11 @@ body {
   height: 150px;
 }
 .individual-cards {
-  margin: 20px;
+  margin: 10px;
 }
 
 .selected-card-details {
-  height: 605px;
+  height: 525px;
   margin-top: 50px;
   border-radius: 0px !important;
 }

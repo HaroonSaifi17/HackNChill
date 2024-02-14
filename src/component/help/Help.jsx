@@ -23,18 +23,29 @@ function Help() {
           Hello there! How can we help?
         </h3>
         <div className="max-w-[400px] my-10 mx-auto">
-          <div className="relative pr-[68px] ">
-            <input
-              placeholder="Your message"
-              className="w-[100%] rounded-l-lg px-4 py-1"
-              type="text"
-            />
-            <a
-              href=""
-              className="absolute top-0 right-0 z-10 inline-block bg-[#db0000] py-1 text-white px-4 rounded-r-lg"
-            >
-              Send
-            </a>
+          <div className=" w-full">
+            <div>
+              <textarea
+                placeholder="Your message"
+                className="w-[100%] rounded-lg px-4 py-2"
+                type="text"
+              />
+            </div>
+            <div className="flex  mt-2">
+              <span className="flex-1">
+                <input
+                  placeholder="Email"
+                  className="w-full px-4 py-2 rounded-l-lg "
+                  type="text"
+                />
+              </span>
+              <a
+                href=""
+                className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-r-lg"
+              >
+                Send
+              </a>
+            </div>
           </div>
           <div className="w-full duration-500 overflow-hidden  bg-white rounded-lg mt-5">
             <p className="p-2 px-4">

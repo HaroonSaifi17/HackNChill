@@ -43,27 +43,27 @@ function ParallaxText({children, baseVelocity = 100}) {
     return (
         <div className="parallax">
             <motion.div className="scroller" style={{x}}>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-                <span>• {children}&nbsp;&nbsp;</span>
-
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
+                <span className="mx-2">• {children}&nbsp;&nbsp;</span>
             </motion.div>
         </div>
     );

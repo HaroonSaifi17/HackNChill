@@ -36,7 +36,7 @@ function Prices() {
               perfect for professionals and enthusiasts alike.
             </p>
           </div>
-          <div className="mb-[-200px] flex-col flex items-center gap-6 max-md:mb-0 order-3">
+          <div className="mb-[-200px] flex-col flex items-center gap-5 max-md:mb-0 order-3">
             <div className=" w-52 h-52 border-[#DB0000] border-[12px] inline-block rounded-full"></div>
             <h1 className="text-white text-4xl font-semibold">#3</h1>
             <p className="text-white text-center">
