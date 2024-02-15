@@ -16,8 +16,7 @@ function Hero() {
     };
 
     return (
-        <>
-        <div id="home" className="bg-wpr overflow-x-hidden relative">
+        <div id="home" className="bg-wpr overflow-hidden relative">
             <div className="flex gap-4 px-[5vw] w-full justify-end py-8 text-white  max-h-[100px] text-2xl">
                 <div
                     className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
@@ -104,16 +103,13 @@ function Hero() {
                     <HeroTimer/>
                 </div>
             </div>
-
+            <div className="absolute bottom-0 flex border-black border-2">
+                <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
+                    <RegisterNow/>
+                </a>
+            </div>
         </div>
-    <div className="flex border-black border-2">
-        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
-            <RegisterNow/>
-        </a>
-    </div>
-    </>
-)
-    ;
+    );
 }
 
 export default Hero;
