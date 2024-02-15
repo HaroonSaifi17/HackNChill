@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <div className="footer">
-      <img className="w-[300px] mx-auto p-8" src="/assets/Logo.png" alt="" />
+      <img className="w-[300px] mx-auto p-8" src="/assets/LogoRed.png" alt="" />
       <div>
         <div>
           <h1 className="text-red-700 text-2xl md:text-3xl font-bold border-b-2 border-b-white pb-5 md:pr-5">
