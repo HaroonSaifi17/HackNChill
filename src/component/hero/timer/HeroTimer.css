@@ -1,0 +1,48 @@
+.heroTimer {
+    display: flex;
+    flex-direction: row;
+}
+
+.heroTimer .timeCount {
+    height: 272px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 227px;
+    line-height: 272px;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+.heroTimer .timeCaptions {
+    margin: 0 5px;
+    height: 73px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 61px;
+    line-height: 73px;
+    text-align: center;
+}
+
+.heroTimer > div:nth-child(1) {
+    color: #BD0B12;
+}
+
+
+@media only screen and (max-width: 1028px) {
+    .heroTimer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroTimer .timeCount {
+        font-size: 5rem;
+        line-height: 3.5rem;
+    }
+
+    .heroTimer .timeCaptions {
+        font-size: 1.5rem;
+        line-height: 3.5rem;
+    }
+}

@@ -1,9 +1,11 @@
 import "./Hero.css";
 import React, { useEffect, useState } from "react";
 import RegisterNow from "./registerNow/RegisterNow.jsx";
+import HeroTimer from "./timer/HeroTimer.jsx";
 
 function Hero() {
   const [navStatus, setNavStatus] = useState(false);
+
   const toggleNav = () => {
     setNavStatus(!navStatus);
     if (!navStatus && window.innerWidth <= 770) {
@@ -12,43 +14,7 @@ function Hero() {
       document.body.style.overflow = "auto";
     }
   };
-  const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollPosition(-window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-  const targetDate = "2025-02-28T00:00:00";
-  const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date();
-    let timeLeft = {};
-
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
-        seconds: Math.floor((difference / 1000) % 60),
-      };
-    }
-
-    return timeLeft;
-  };
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [targetDate]);
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
-  const { days, hours, minutes, seconds } = timeLeft;
   return (
     <div id="home" className="bg-wpr overflow-x-hidden relative">
       <div className="h-full max-w-screen-2xl px-[5vw] mx-auto flex justify-center items-center relative">
@@ -135,33 +101,7 @@ function Hero() {
             Apply-With-Devfolio
           </a>
           <div className="mt-6">
-            {" "}
-            {Object.entries(timeLeft).length === 0 ? (
-              <span className="text-4xl text-white">Countdown expired!</span>
-            ) : (
-              <div className="flex  max-md:gap-1 gap-2 text-center">
-                <span className="bg-white w-[70px] p-2">
-                  <span className="text-2xl font-semibold">{days}</span>
-                  <br />
-                  Days
-                </span>
-                <span className="bg-white  w-[70px] p-2">
-                  <span className="text-2xl font-semibold">{hours}</span>
-                  <br />
-                  Hours
-                </span>
-                <span className="bg-white  w-[70px] p-2">
-                  <span className="text-2xl font-semibold">{minutes}</span>
-                  <br />
-                  Minutes
-                </span>
-                <span className="bg-white  w-[70px] p-2">
-                  <span className="text-2xl font-semibold">{seconds}</span>
-                  <br />
-                  seconds
-                </span>
-              </div>
-            )}
+            <HeroTimer />
           </div>
         </div>
         <div className="absolute bottom-0 left-0 border-black border-2">
