@@ -31,7 +31,7 @@ function Help() {
                 type="text"
               />
             </div>
-            <div className="flex  items-center justify-center mt-2">
+            <div className="flex  items-center justify-end mt-2">
               <a
                 href=""
                 className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-lg"
