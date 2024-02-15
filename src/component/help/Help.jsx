@@ -27,21 +27,14 @@ function Help() {
             <div>
               <textarea
                 placeholder="Your message"
-                className="w-[100%] rounded-lg px-4 py-2"
+                className="w-[100%] rounded-lg px-4 py-2 h-20"
                 type="text"
               />
             </div>
-            <div className="flex  mt-2">
-              <span className="flex-1">
-                <input
-                  placeholder="Email"
-                  className="w-full focus:outline-none hover:outline-none  px-4 py-2 rounded-l-lg "
-                  type="text"
-                />
-              </span>
+            <div className="flex  items-center justify-center mt-2">
               <a
                 href=""
-                className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-r-lg"
+                className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-lg"
               >
                 Send
               </a>
