@@ -79,7 +79,7 @@ function Themes() {
       }
     };
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft = window.innerWidth / 2;
+      scrollRef.current.scrollLeft = (themes.length/2 * 250) - 125;
       scrollLength = scrollRef.current.scrollLeft;
       scrollRef.current.addEventListener("scroll", handleScroll);
     }
@@ -91,7 +91,7 @@ function Themes() {
   }, []);
   return (
     <div id="theme" className="bg-[#0E0E11] overflow-hidden">
-      <div className="max-w-screen-2xl mx-auto py-16 overflow-hidden">
+      <div className=" py-16 overflow-hidden">
         <h2 className="text-center text-white text-4xl">
           THEMES FOR HACKATHON
         </h2>
