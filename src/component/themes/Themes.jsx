@@ -90,11 +90,11 @@ function Themes() {
     };
   }, []);
   return (
-    <div id="theme" className="bg-[#0E0E11] overflow-hidden">
+    <div id="theme" className="overflow-hidden">
       <div className=" py-16 overflow-hidden">
-        <h2 className="text-center text-white text-4xl">
+        <h3 className="text-center text-white text-4xl">
           THEMES FOR HACKATHON
-        </h2>
+        </h3>
         <div
           ref={scrollRef}
           style={{

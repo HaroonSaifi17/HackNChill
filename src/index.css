@@ -11,3 +11,11 @@
   font-family: 'Ubuntu', sans-serif;
   scroll-behavior: smooth;
 }
+
+h3 {
+  @apply text-3xl !important;
+}
+
+body {
+  background: url(/assets/StarBackground.png) repeat-y;
+}

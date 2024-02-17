@@ -12,9 +12,6 @@ body {
   color: white;
   margin-top: 20px;
 }
-.page-layout{
-  background-color: black;
-}
 .card-layout {
   display: flex;
   flex: 1;
@@ -38,7 +35,6 @@ body {
   flex-grow: 1;
   padding: 20px;
   padding-bottom: 0;
-  background-color: black;
   padding-right: 0;
 }
 

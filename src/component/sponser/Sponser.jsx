@@ -3,7 +3,7 @@ import React from "react";
 
 function Sponser() {
   return (
-    <div id="sponser" className="bg-black">
+    <div id="sponser">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-[50px]">
         <div className="flex text-3xl sm:text-5xl mx-[-5vw] justify-center ">
           <div className="bg-gradient-to-r from-gray-500 to-white text-transparent bg-clip-text">

@@ -26,10 +26,6 @@
   text-align: center;
 }
 
-.heroTimer>div:nth-child(1) {
-  color: #bd0b12;
-}
-
 .heroTimer>div {
   margin: 0 10px;
 }
