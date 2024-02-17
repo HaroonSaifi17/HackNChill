@@ -8,6 +8,7 @@ import Prices from "./../../component/prices/Prices";
 import Sponser from "./../../component/sponser/Sponser";
 import Help from "./../../component/help/Help";
 import Footer from "./../../component/footer/Footer";
+import Commuinty from "../../component/Community/Commuinty";
 
 function Home() {
   return (
@@ -19,7 +20,8 @@ function Home() {
       <Event />
       <Prices />
       <Sponser head={"MEET OUR SPONSORS"} id={"sponsors"} />
-      <Sponser head={"COMMUNITY PARTNERS"} id={"partners"} />
+      {/* <Sponser head={"COMMUNITY PARTNERS"} id={"partners"} /> */}
+      <Commuinty head={"COMMUNITY PARTNERS"} id={"community"} />
       <Help />
       <Footer />
     </>
