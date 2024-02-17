@@ -19,3 +19,7 @@
 body {
   background: url(/assets/StarBackground.png) repeat;
 }
+
+#about,  #theme, #timeline, #event, #prizes, #sponsors, #partners {
+  border-bottom: 1px solid #222222;
+}
