@@ -4,10 +4,8 @@ import React, { useEffect, useRef, useState } from "react";
 function Themes() {
   const themes = [
     {
-      img: "http://placehold.it/250x150",
-      title: "Health",
-      discription:
-        "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.",
+      img: "assets/Themes/sustainability.jpg",
+      title: "Sustainability",
     },
     {
       img: "http://placehold.it/250x150",
@@ -79,7 +77,7 @@ function Themes() {
       }
     };
     if (scrollRef.current) {
-      scrollRef.current.scrollLeft = (themes.length/2 * 250) - 125;
+      scrollRef.current.scrollLeft = (themes.length / 2) * 250 - 125;
       scrollLength = scrollRef.current.scrollLeft;
       scrollRef.current.addEventListener("scroll", handleScroll);
     }
@@ -124,7 +122,7 @@ function Themes() {
                 className="w-[250px] bg-white max-sm:mx-[-20px] max-md:mx-[-15px] max-lg:mx-[-10px] duration-75 flex-grow-1 flex-shrink-0 overflow-hidden snap-center rounded-3xl"
               >
                 <img
-                  className="w-[250px] h-[150px] object-cover"
+                  className="w-[250px] h-[80%] object-cover"
                   src={item.img}
                   alt=""
                 />
