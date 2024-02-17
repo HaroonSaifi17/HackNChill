@@ -45,7 +45,7 @@ function Event() {
   };
   return (
     <>
-      <div id="event" className="page-layout">
+      <div id="event" className="page-layout py-16">
         <div className="card-layout">
           <div className="selected-card-content">
             <h3 className="event-title">EVENTS</h3>
