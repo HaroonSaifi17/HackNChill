@@ -25,7 +25,7 @@ const RegisterButton = () => (
   <div 
 	className="apply-button" 
 	data-hackathon-slug="hacknchill-1" 
-	data-button-theme="light"
+	data-button-theme="dark-inverted"
 	style={{height: "44px", width: "312px"}}
 ></div>
 );
@@ -85,7 +85,7 @@ function Hero() {
             <a
               className="hover:scale-[1.1] duration-500 "
               onClick={toggleNav}
-              href="#sponser"
+              href="#sponsor"
             >
               Sponser
             </a>
