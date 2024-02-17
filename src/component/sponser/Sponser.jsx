@@ -244,7 +244,7 @@ function Sponser({ head, id }) {
                 className="h-full bg-white w-full  translate-x-2 -translate-y-2"
               />
             </div>
-          {/* </div>
+            {/* </div>
           <div className="flex gap-4 max-md:flex-wrap items-center justify-center"> */}
             <div className="h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line">
               <img
