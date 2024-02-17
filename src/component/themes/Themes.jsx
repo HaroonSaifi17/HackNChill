@@ -9,7 +9,7 @@ function Themes() {
     },
     {
       img: "assets/Themes/culture and heritage .jpg",
-      title: "Health",
+      title: "Culture and Heritage",
     },
     {
       img: "assets/Themes/cyber security .jpg",
@@ -27,12 +27,6 @@ function Themes() {
       img: "assets/Themes/smart Education .jpg",
       title: "Smart Education",
     },
-    // {
-    //   img: "http://placehold.it/250x150",
-    //   title: "Health",
-    //   discription:
-    //     "Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet.",
-    // },
   ];
   const [select, setSelect] = useState(Math.floor(themes.length / 2));
   const scrollRef = useRef(null);
@@ -116,7 +110,7 @@ function Themes() {
                   src={item.img}
                   alt=""
                 />
-                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0  mt-3">
+                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0  mt-3 ">
                   {item.title}
                 </h3>
               </div>
