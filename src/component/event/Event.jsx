@@ -87,7 +87,9 @@ function Event() {
                     onClick={() => handleCardClick(card)}
                   >
                     <Card.Body>
-                      <Card.Title className="text-red-950 font-semibold">{card.title}</Card.Title>
+                      <Card.Title className="text-red-950 font-semibold">
+                        {card.title}
+                      </Card.Title>
                       <Card.Text>{card.content}</Card.Text>
                     </Card.Body>
                   </Card>

@@ -87,7 +87,7 @@ function Hero() {
               onClick={toggleNav}
               href="#sponsor"
             >
-              Sponser
+              Sponsor
             </a>
             <a
               className="hover:scale-[1.1] duration-500 "
