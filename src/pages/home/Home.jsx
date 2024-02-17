@@ -18,7 +18,7 @@ function Home() {
       <Timeline />
       <Event />
       <Prices />
-      <Sponser head={"MEAT OUR SPONSORS"} id={"sponsors"} />
+      <Sponser head={"MEET OUR SPONSORS"} id={"sponsors"} />
       <Sponser head={"COMMUNITY PARTNERS"} id={"partners"} />
       <Help />
       <Footer />
