@@ -22,12 +22,12 @@ const RegisterButton = () => (
   //     ></path>
   //   </svg>
   // </button>
-  <div 
-	className="apply-button" 
-	data-hackathon-slug="hacknchill-1" 
-	data-button-theme="dark-inverted"
-	style={{height: "44px", width: "312px"}}
-></div>
+  <div
+    className="apply-button"
+    data-hackathon-slug="hacknchill-1"
+    data-button-theme="dark-inverted"
+    style={{ height: "44px", width: "312px" }}
+  ></div>
 );
 
 function Hero() {
