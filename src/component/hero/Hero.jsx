@@ -4,29 +4,44 @@ import RegisterNow from "./registerNow/RegisterNow.jsx";
 import HeroTimer from "./timer/HeroTimer.jsx";
 
 const RegisterButton = () => (
-    <button className={"cta flex"}>
-      <span className="hover-underline-animation">Register with Devfolio</span>
-      <svg
-          id="arrow-horizontal"
-          fill={"white"}
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="10"
-          viewBox="0 0 46 16"
-      >
-        <path
-            id="Path_10"
-            data-name="Path 10"
-            d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-            transform="translate(30)"
-        ></path>
-      </svg>
-    </button>
-
-)
+  // <button className={"cta flex"}>
+  //   <span className="hover-underline-animation">Register with Devfolio</span>
+  //   <svg
+  //     id="arrow-horizontal"
+  //     fill={"white"}
+  //     xmlns="http://www.w3.org/2000/svg"
+  //     width="30"
+  //     height="10"
+  //     viewBox="0 0 46 16"
+  //   >
+  //     <path
+  //       id="Path_10"
+  //       data-name="Path 10"
+  //       d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+  //       transform="translate(30)"
+  //     ></path>
+  //   </svg>
+  // </button>
+  <div 
+	className="apply-button" 
+	data-hackathon-slug="hacknchill-1" 
+	data-button-theme="light"
+	style={{height: "44px", width: "312px"}}
+></div>
+);
 
 function Hero() {
   const [navStatus, setNavStatus] = useState(false);
+  React.useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://apply.devfolio.co/v2/sdk.js";
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   const toggleNav = () => {
     setNavStatus(!navStatus);
@@ -38,8 +53,8 @@ function Hero() {
   };
 
   return (
-      <div id="home" className="bg-wpr overflow-hidden relative">
-        <div className="px-[5vw] max-w-screen-2xl mx-auto h-[100vh] relative">
+    <div id="home" className="bg-wpr overflow-hidden relative">
+      <div className="px-[5vw] max-w-screen-2xl mx-auto h-[100vh] relative">
         <div className="flex gap-4 px-[5vw] w-full justify-end py-3 text-white absolute top-0 left-0 text-xl">
           <div
             className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
@@ -115,15 +130,15 @@ function Hero() {
               A GDSC ADGIPS EXCLUSIVE
             </h1>
             &nbsp;
-            <img src={"/gdsc.png"} width={80}/>
+            <img src={"/gdsc.png"} width={80} />
           </div>
 
           <div className="max-w-[600px]">
-            <img src="/assets/Logo1.png" alt="logo"/>
+            <img src="/assets/Logo1.png" alt="logo" />
           </div>
           <RegisterButton />
           <div>
-            <HeroTimer/>
+            <HeroTimer />
           </div>
         </div>
       </div>
