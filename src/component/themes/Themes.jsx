@@ -116,12 +116,9 @@ function Themes() {
                   src={item.img}
                   alt=""
                 />
-                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0 mt-3">
+                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0  mt-3">
                   {item.title}
                 </h3>
-                {/* <p className="p-2 bg-white text-center text-black">
-                  {item.discription}
-                </p> */}
               </div>
             );
           })}
