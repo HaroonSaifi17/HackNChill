@@ -11,13 +11,13 @@
   background-image: url(/assets/StarBackground.png);
 }
 .train{
-  position: relative;
+  /*position: relative;*/
   background-image: url(/timeline/train.png);
   background-position:center;
   background-size: cover;
   margin-left: -1000px;
   width: 2000px;
-  height: 500px;
+  min-height: 300px;
 }
 .track{
   width: 100vw;
