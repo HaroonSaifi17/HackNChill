@@ -22,11 +22,11 @@ function Timeline() {
         <h2 className="text-white text-4xl text-center w-full py-5 px-[5vw]">
           TIMELINE
         </h2>
-        <div className="h-[10vh]"></div>
         <div
           style={{ transform: `translateX(${scrollPosition}px)` }}
-          className="train flex-grow-1"
-        ></div>
+          className="train"
+        >
+        </div>
         <div className="track"></div>
       </div>
     </div>
