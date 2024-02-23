@@ -208,14 +208,14 @@ function Sponser({ head, id }) {
   return (
     <div id={id}>
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-[50px]">
-        <div className="flex text-3xl sm:text-5xl mx-[-5vw] justify-center ">
-          <div className="bg-gradient-to-r from-gray-500 to-white text-transparent bg-clip-text font-semibold text-5xl font-ubuntu">
+        <div className="headingDivSponsor px-2 md:px-0">
+          <div className="headingDivSponsorMain">
             {head
               .split(" ")
               .slice(0, head.split(" ").length - 1)
               .join(" ")}
           </div>
-          <div className="bg-gradient-to-r from-red-600 to-red-900 ml-2 sm:ml-4 px-1 text-white font-semibold text-5xl font-ubuntu">
+          <div className="headingDivSponsorSub">
             {head.split(" ")[head.split(" ").length - 1]}
           </div>
         </div>
