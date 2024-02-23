@@ -13,11 +13,12 @@
 .train{
   /*position: relative;*/
   background-image: url(/timeline/train.png);
-  background-position:center;
-  background-size: cover;
+  background-position:right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-left: -1000px;
   width: 2150px;
-  height: 500px;
+  height: calc(100vh - 220px);
 }
 .track{
   width: 100vw;
