@@ -7,7 +7,7 @@ import "./Event.css";
 function Event() {
   const initialSelectedCard = {
     id: 1,
-    title: "HackNSolve",
+    title: "",
     content: "",
     img: "/assets/Event/HackNSolve.png",
   };
@@ -16,31 +16,31 @@ function Event() {
   const cards = [
     {
       id: 1,
-      title: "HackNSolve",
+      title: "",
       content: "",
       img: "/assets/Event/HackNSolve.png",
     },
     {
       id: 2,
-      title: "Bid-O-Mania",
+      title: "",
       content: "",
       img: "/assets/Event/Bid-O-Mania.png",
     },
     {
       id: 3,
-      title: "RoboWar",
+      title: "",
       content: "",
       img: "/assets/Event/RoboWar.png",
     },
     {
       id: 4,
-      title: "Gaming Arena",
+      title: "",
       content: "",
       img: "/assets/Event/GamingArena.png",
     },
     {
       id: 5,
-      title: "Speaker Session",
+      title: "",
       content: "",
       img: "/assets/Event/GuestSpeakerSession.png",
     },
