@@ -19,7 +19,7 @@ const Merchandise = ({ head, id }) => {
 
           <div id={id}>
             {" "}
-            <h1 className="text-white text-center pt-20 lg:text-6xl mb-16 text-3xl ">
+            <div className="pt-20 mb-16 flex justify-center items-center">
                 <div className="h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line">
                     <img
                         src="assets/Sponsors/BobbleAi_Logo.png"
@@ -27,7 +27,7 @@ const Merchandise = ({ head, id }) => {
                         className="object-contain h-full bg-white w-full  translate-x-2 -translate-y-2"
                     />
                 </div>
-            </h1>
+            </div>
           </div>
         </div>
       </div>
