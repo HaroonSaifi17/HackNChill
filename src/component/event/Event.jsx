@@ -16,32 +16,22 @@ function Event() {
   const cards = [
     {
       id: 1,
-      title: "",
-      content: "",
       img: "/assets/Event/HackNSolve.png",
     },
     {
       id: 2,
-      title: "",
-      content: "",
       img: "/assets/Event/Bid-O-Mania.png",
     },
     {
       id: 3,
-      title: "",
-      content: "",
       img: "/assets/Event/RoboWar.png",
     },
     {
       id: 4,
-      title: "",
-      content: "",
       img: "/assets/Event/GamingArena.png",
     },
     {
       id: 5,
-      title: "",
-      content: "",
       img: "/assets/Event/GuestSpeakerSession.png",
     },
   ];
@@ -50,23 +40,19 @@ function Event() {
   };
   return (
     <>
-      <div id="event" className="page-layout py-16">
+      <div id="event" className="page-layout pt-16">
         <div className="card-layout">
           <div className="selected-card-content">
             <h3 className="text-white text-center w-full py-5 px-[5vw]  font-semibold text-5xl font-ubuntu">
               EVENTS
             </h3>
             {selectedCard && (
-              <div>
+              <div className="scard">
                 <Card
                   className="selected-card-details bg-center bg-cover"
                   style={{ backgroundImage: `url(${selectedCard.img})` }}
                 >
                   <Card.Body>
-                    <Card.Title className="text-4xl font-semibold text-red-950 uppercase text-white">
-                      {selectedCard.title}
-                    </Card.Title>
-                    <Card.Text>{selectedCard.content}</Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -94,10 +80,6 @@ function Event() {
                     onClick={() => handleCardClick(card)}
                   >
                     <Card.Body>
-                      <Card.Title className="text-red-950 font-semibold text-white">
-                        {card.title}
-                      </Card.Title>
-                      <Card.Text>{card.content}</Card.Text>
                     </Card.Body>
                   </Card>
                 </div>
@@ -111,3 +93,5 @@ function Event() {
 }
 
 export default Event;
+
+
