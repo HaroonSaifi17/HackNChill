@@ -118,7 +118,7 @@ function Themes() {
                   src={item.img}
                   alt=""
                 />
-                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0 text-nowrap mt-3 ">
+                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0 text-nowrap mt-3" style={{fontSize: item.title === "Culture and Heritage" ? "1.2rem" : ""}}>
                   {item.title}
                 </h3>
               </div>
