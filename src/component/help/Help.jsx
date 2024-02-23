@@ -48,13 +48,12 @@ function Help() {
               />
               Registration Process
             </p>
-
             <div className="h-[0.5px] bg-gray-400 mx-4"></div>
             <a
               className="p-2 px-4 flex cursor-pointer justify-between"
               onClick={() => toggleAnswer("eligible")}
             >
-              <span>Who's eligible to participate?</span>
+              <span> Who's eligible to participate?</span>
               <FontAwesomeIcon
                 className={`mr-2 text-gray duration-200 ${
                   answersVisible["eligible"] ? "rotate-180" : ""
@@ -65,13 +64,12 @@ function Help() {
             {answersVisible["eligible"] && (
               <div className="px-4 py-2 bg-gray-100 rounded-b-md text-gray-500">
                 <p>
-                  The answer to the question "Who's eligible to participate?"
-                  goes here.
+                  Any student pursuing a degree or tech enthusiast can
+                  participate in the GDSC ADGIPS Hack&Chill 1.0.
                 </p>
               </div>
             )}
             <div className="h-[0.5px] bg-gray-400 mx-4"></div>
-
             <a
               className="p-2 px-4 flex justify-between cursor-pointer"
               onClick={() => toggleAnswer("participate")}
@@ -86,60 +84,132 @@ function Help() {
             </a>
             {answersVisible["participate"] && (
               <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
-                <p>
-                  The answer to the question "How to participate?" goes here.
-                </p>
+                <p>Click on Apply with Devfolio button on home page.</p>
               </div>
             )}
-          </div>
-          <div className="w-full bg-white rounded-lg overflow-hidden mt-5">
-            <p className="p-2 px-4">
-              <FontAwesomeIcon
-                className="mr-2 text-[#821010]"
-                icon={faWrench}
-              />
-              Fix a problem
-            </p>
             <div className="h-[0.5px] bg-gray-400 mx-4"></div>
-            <a
-              className="p-2 px-4 flex cursor-pointer justify-between"
-              onClick={() => toggleAnswer("error")}
-            >
-              <span>Error Codes</span>
-              <FontAwesomeIcon
-                className={`mr-2 text-gray duration-200 ${
-                  answersVisible["error"] ? "rotate-180" : ""
-                }`}
-                icon={faChevronDown}
-              />
-            </a>
-            {answersVisible["error"] && (
-              <div className="px-4 py-2   bg-gray-100 rounded-b-md text-gray-500">
-                <p>
-                  The answer to the question "Who's eligible to participate?"
-                  goes here.
-                </p>
-              </div>
-            )}
-
-            <div className="h-[0.5px] bg-gray-400 mx-4"></div>
-
             <a
               className="p-2 px-4 flex justify-between cursor-pointer"
-              onClick={() => toggleAnswer("criteria")}
+              onClick={() => toggleAnswer("updated")}
             >
-              <span>What is the eligible criteria?</span>
+              <span>
+                How can I stay updated on the latest information about
+                Hack&Chill
+              </span>
               <FontAwesomeIcon
                 className={`mr-2 text-gray duration-200 ${
-                  answersVisible["criteria"] ? "rotate-180" : ""
+                  answersVisible["updated"] ? "rotate-180" : ""
                 }`}
                 icon={faChevronDown}
               />
             </a>
-            {answersVisible["criteria"] && (
-              <div className="px-4 py-2 bg-gray-100 rounded-b-md  text-gray-500">
+            {answersVisible["updated"] && (
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
                 <p>
-                  The answer to the question "How to participate?" goes here.
+                  Follow our official social media handles and our website, for
+                  the latest updates, announcements, and important information
+                  leading up to and during Hack&Chill 1.0.
+                </p>
+              </div>
+            )}
+            <div className="h-[0.5px] bg-gray-400 mx-4"></div>
+            <a
+              className="p-2 px-4 flex justify-between cursor-pointer"
+              onClick={() => toggleAnswer("themes")}
+            >
+              <span>
+                Are there any specific themes or challenges for the hackathon?
+              </span>
+              <FontAwesomeIcon
+                className={`mr-2 text-gray duration-200 ${
+                  answersVisible["themes"] ? "rotate-180" : ""
+                }`}
+                icon={faChevronDown}
+              />
+            </a>
+            {answersVisible["themes"] && (
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
+                <p>
+                  CYes, there are various themes, including sustainability,
+                  healthcare, smart education, open innovation, blockchain,
+                  cybersecurity, heritage and culture, and robotics.
+                </p>
+              </div>
+            )}
+            <div className="h-[0.5px] bg-gray-400 mx-4"></div>
+            <a
+              className="p-2 px-4 flex justify-between cursor-pointer"
+              onClick={() => toggleAnswer("participants")}
+            >
+              <span>
+                Can I participate as an individual, or is it mandatory to form a
+                team?
+              </span>
+              <FontAwesomeIcon
+                className={`mr-2 text-gray duration-200 ${
+                  answersVisible["participants"] ? "rotate-180" : ""
+                }`}
+                icon={faChevronDown}
+              />
+            </a>
+            {answersVisible["participants"] && (
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
+                <p>
+                  Unfortunately, participating as an individual is not allowed
+                  for Hack&Chill. However, you can certainly form a team to join
+                  the hackathon. The minimum team size requirement is 3 members,
+                  so gather your peers and collaborate to make the most out of
+                  this exciting event!
+                </p>
+              </div>
+            )}{" "}
+            <div className="h-[0.5px] bg-gray-400 mx-4"></div>
+            <a
+              className="p-2 px-4 flex justify-between cursor-pointer"
+              onClick={() => toggleAnswer("prizes")}
+            >
+              <span>Will there be prizes for the winners of Hack&Chill?</span>
+              <FontAwesomeIcon
+                className={`mr-2 text-gray duration-200 ${
+                  answersVisible["prizes"] ? "rotate-180" : ""
+                }`}
+                icon={faChevronDown}
+              />
+            </a>
+            {answersVisible["prizes"] && (
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
+                <p>
+                  Yes, there will be prize money awarded to the top performers
+                  of Hack&Chill. Stay tuned for more details on the prize
+                  categories and amounts.
+                </p>
+              </div>
+            )}{" "}
+            <div className="h-[0.5px] bg-gray-400 mx-4"></div>
+            <a
+              className="p-2 px-4 flex justify-between cursor-pointer"
+              onClick={() => toggleAnswer("mentor")}
+            >
+              <span>
+                Will there be mentors available to assist participants during
+                the hackathon?
+              </span>
+              <FontAwesomeIcon
+                className={`mr-2 text-gray duration-200 ${
+                  answersVisible["mentor"] ? "rotate-180" : ""
+                }`}
+                icon={faChevronDown}
+              />
+            </a>
+            {answersVisible["mentor"] && (
+              <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
+                <p>
+                  Yes, there will be mentors available to assist participants
+                  during the hackathon. We have a dedicated team of mentors
+                  assigned to provide guidance and support. Additionally, if
+                  you're interested in becoming a mentor, there will be an
+                  application process where you can apply for the mentorship
+                  role.
                 </p>
               </div>
             )}
