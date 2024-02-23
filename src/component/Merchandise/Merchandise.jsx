@@ -22,7 +22,7 @@ const Merchandise = ({ head, id }) => {
             <div className="pt-20 mb-16 flex justify-center items-center">
               <div className="h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line">
                 <img
-                  src="assets/Sponsors/BobbleAi_Logo.png"
+                  src="assets/Sponsors/Bobble-AI.jpg"
                   alt="BobbleAI LOGO"
                   className="object-contain h-full bg-white w-full  translate-x-2 -translate-y-2"
                 />
