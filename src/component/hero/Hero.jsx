@@ -126,8 +126,8 @@ function Hero() {
           <div className="absolute top-0 left-0 w-full h-full backdrop-blur-md"></div>
         </div>
         <div className="flex justify-center items-center gap-4 h-full pt-[60px] pb-[35px] flex-col">
-          <div className={"flex align-items-center max-md:flex-col-reverse"}>
-            <img src={"/gdsc.png"} width={70} className="mr-2" />
+          <div className={"flex align-items-center"}>
+            <img src={"/gdsc.png"} width="60vw" className="mr-2" />
               <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold float-left">
                 GDSC ADGIPS EXCLUSIVE
               </h1>
