@@ -74,7 +74,7 @@ function Themes() {
   return (
     <div id="theme" className="overflow-hidden">
       <div className=" py-16 overflow-hidden">
-        <h3 className="text-center text-white text-4xl">
+        <h3 className="text-center text-white font-semibold text-5xl font-ubuntu">
           THEMES FOR HACKATHON
         </h3>
         <div

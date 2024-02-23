@@ -5,7 +5,7 @@ function Prices() {
   return (
     <div id="prizes" className="prices-bg">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-16">
-        <h3 className="text-center text-6xl font-semibold text-white">
+        <h3 className="text-center font-semibold text-white  font-semibold text-5xl font-ubuntu">
           PRIZES
         </h3>
         <div className="flex justify-around items-center max-md:flex-col gap-7 mt-12 max-md:mb-0  mb-[200px]">

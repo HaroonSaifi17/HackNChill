@@ -123,20 +123,24 @@ function Hero() {
               </div>
             </a>
           </div>
+          <div className="absolute top-0 left-0 w-full h-full backdrop-blur-md"></div>
         </div>
         <div className="flex justify-center items-center gap-4 h-full pt-[60px] pb-[35px] flex-col">
           <div className={"flex align-items-center max-md:flex-col-reverse"}>
-            <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold float-left">
-              A GDSC ADGIPS EXCLUSIVE
-            </h1>
-            &nbsp;
-            <img src={"/gdsc.png"} width={80} />
+            <img src={"/gdsc.png"} width={70} className="mr-2" />
+              <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold float-left">
+                GDSC ADGIPS EXCLUSIVE
+              </h1>
+              &nbsp;
           </div>
-
           <div className="max-w-[600px]">
             <img src="/assets/Logo1.png" alt="logo" />
           </div>
-          <RegisterButton />
+          <div className="flex">
+            <RegisterButton />
+            {/* <button className="ml-3 px-4 py-2 bg-customPurple text-black text-lg hover:bg-white rounded font-semibold ">Apply on Hack2skill</button> */}
+          </div>
+
           <div>
             <HeroTimer />
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Commuinty = ({ head, id }) => {
+const Merchandise = ({ head, id }) => {
   return (
     <div>
       <div id={id}>
@@ -20,7 +20,13 @@ const Commuinty = ({ head, id }) => {
           <div id={id}>
             {" "}
             <h1 className="text-white text-center pt-20 lg:text-6xl mb-16 text-3xl ">
-              Coming Soon...{" "}
+                <div className="h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line">
+                    <img
+                        src="assets/Sponsors/BobbleAi_Logo.png"
+                        alt="BobbleAI LOGO"
+                        className="object-contain h-full bg-white w-full  translate-x-2 -translate-y-2"
+                    />
+                </div>
             </h1>
           </div>
         </div>
@@ -29,4 +35,4 @@ const Commuinty = ({ head, id }) => {
   );
 };
 
-export default Commuinty;
+export default Merchandise;

@@ -19,7 +19,7 @@ function Timeline() {
   return (
     <div id="timeline" className="timeline-wpr">
       <div className={"flex flex-col"}>
-        <h2 className="text-white text-4xl text-center w-full py-5 px-[5vw]">
+        <h2 className="text-white text-center w-full py-5 px-[5vw]  font-semibold text-5xl font-ubuntu">
           TIMELINE
         </h2>
         <div

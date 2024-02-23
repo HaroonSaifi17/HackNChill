@@ -41,7 +41,7 @@ export default function HeroTimer() {
     <div className={"heroTimer text-white"}>
       <div>
         <span className={"timeCount"}>{addTrailingZero(days)}</span>
-        <span className={"timeCaptions"}>DAY</span>
+        <span className={"timeCaptions"}>DAYS</span>
       </div>
       <div>
         <span className={"timeCount"}>{addTrailingZero(hours)}</span>

@@ -38,9 +38,9 @@ const Footer = () => {
             <a href="https://www.instagram.com/hacknchill_1.0?igsh=MWIxb2dnMGxlZ25nMQ==">
               <FontAwesomeIcon size="xl" icon={faInstagram} />
             </a>
-            <a href="#">
+            {/* <a href="#">
               <FontAwesomeIcon size="xl" icon={faLinkedin} />
-            </a>
+            </a> */}
             <a href="https://x.com/GdscAdgips?t=FfjGzz9JrGp-qNlSXqv_3A&s=09">
               <FontAwesomeIcon size="xl" icon={faXTwitter} />
             </a>

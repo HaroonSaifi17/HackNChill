@@ -5,7 +5,7 @@ function About() {
   return (
     <div id="about">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-16">
-        <h3 className="text-center text-4xl font-semibold text-white">
+        <h3 className="text-center text-5xl font-semibold text-white font-ubuntu">
           ABOUT HACK&CHILL
         </h3>
         <div className="flex gap-10 flex-row max-md:!flex-col-reverse my-10 justify-center items-center">

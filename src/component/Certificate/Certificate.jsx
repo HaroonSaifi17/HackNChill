@@ -1,6 +1,6 @@
 import React from "react";
 
-const Commuinty = ({ head, id }) => {
+const Certificate = ({ head, id }) => {
   return (
     <div>
       <div id={id}>
@@ -29,4 +29,4 @@ const Commuinty = ({ head, id }) => {
   );
 };
 
-export default Commuinty;
+export default Certificate;
