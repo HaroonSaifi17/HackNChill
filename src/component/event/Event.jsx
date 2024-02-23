@@ -53,7 +53,9 @@ function Event() {
       <div id="event" className="page-layout py-16">
         <div className="card-layout">
           <div className="selected-card-content">
-            <h3 className="text-white text-center w-full py-5 px-[5vw]  font-semibold text-5xl font-ubuntu">EVENTS</h3>
+            <h3 className="text-white text-center w-full py-5 px-[5vw]  font-semibold text-5xl font-ubuntu">
+              EVENTS
+            </h3>
             {selectedCard && (
               <div>
                 <Card
