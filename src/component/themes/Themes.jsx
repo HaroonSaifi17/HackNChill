@@ -1,5 +1,7 @@
 import "./Themes.css";
 import React, { useEffect, useRef, useState } from "react";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLeftLong, faRightLong} from "@fortawesome/free-solid-svg-icons";
 
 function Themes() {
   const themes = [
@@ -72,7 +74,13 @@ function Themes() {
     };
   }, []);
   return (
-    <div id="theme" className="overflow-hidden">
+    <div id="theme" className="relative overflow-hidden">
+      <button className={"themeNavigationButtons left-10"} onClick={()=> scrollRef.current.scrollBy({left:-5, behavior: "smooth"})}>
+        <FontAwesomeIcon icon={faLeftLong} />
+      </button>
+      <button className={"themeNavigationButtons right-10"} onClick={()=> scrollRef.current.scrollBy({left:5, behavior: "smooth"})}>
+        <FontAwesomeIcon icon={faRightLong} />
+      </button>
       <div className=" py-16 overflow-hidden">
         <h3 className="text-center text-white font-semibold text-5xl font-ubuntu">
           THEMES FOR HACKATHON
