@@ -207,7 +207,7 @@ import React from "react";
 function Sponser({ head, id }) {
   return (
     <div id={id}>
-      <div className="max-w-screen-2xl mx-auto px-[5vw] py-[50px]">
+      <div className="max-w-screen-2xl mx-auto px-[5vw] pb-[8rem] pt-[4rem]">
         <div className="headingDivSponsor px-2 md:px-0">
           <div className="headingDivSponsorMain">
             {head
@@ -262,7 +262,7 @@ function Sponser({ head, id }) {
             </div>
           </div>
         </div>
-        <h2 className="my-5 mb-4 text-3xl text-center font-semibold  text-amber-300 uppercase">
+        <h2 className="my-5 mb-2 text-3xl text-center font-semibold  text-amber-300 uppercase">
           Gold
         </h2>
         {/* <div className="flex justify-center items-center flex-wrap gap-4">

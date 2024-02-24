@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -20,6 +20,12 @@ body {
   background: url(/assets/StarBackground.png) repeat;
 }
 
-#about,  #theme, #timeline, #event, #prizes, #sponsors, #partners {
-  border-bottom: 1px solid #222222;
+#about,
+#theme,
+#timeline,
+#event,
+#prizes,
+#sponsors,
+#partners {
+  border-bottom: 0.5px solid #949494;
 }

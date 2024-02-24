@@ -42,7 +42,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
   return (
     <div className="parallax">
-      <motion.div className="scroller" style={{ x }}>  
+      <motion.div className="scroller" style={{ x }}>
         <span className="mx-2"> {children}&nbsp;&nbsp;</span>
         <span className="mx-2"> {children}&nbsp;&nbsp;</span>
         <span className="mx-2"> {children}&nbsp;&nbsp;</span>
@@ -61,5 +61,9 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 }
 
 export default function RegisterNow() {
-  return <ParallaxText baseVelocity={-5}>The code will be with you. Always!!</ParallaxText>;
+  return (
+    <ParallaxText baseVelocity={-3}>
+      The code will be with you Always!{" "}
+    </ParallaxText>
+  );
 }

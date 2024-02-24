@@ -1,17 +1,17 @@
-.bg-wpr{
-  background-image: url("/assets/HeroBackground.jpg");
+.bg-wpr {
+  background-image: url("/assets/main.jpg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
   background-color: white;
 }
-@media(min-width: 768px){
-   .bg-wpr{
+@media (min-width: 768px) {
+  .bg-wpr {
     min-width: 800px;
   }
 }
-.animate1{
-   animation: moveleft 40s linear infinite;
+.animate1 {
+  animation: moveleft 40s linear infinite;
 }
 @keyframes moveleft {
   0% {
@@ -76,5 +76,3 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-

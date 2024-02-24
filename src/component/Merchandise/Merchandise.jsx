@@ -4,7 +4,7 @@ const Merchandise = ({ head, id }) => {
   return (
     <div>
       <div id={id}>
-        <div className="max-w-screen-2xl mx-auto px-[5vw] py-[50px]">
+        <div className="max-w-screen-2xl mx-auto px-[5vw] pb-[4rem] hover:border-t-2 pt-[3rem]">
           <div className="headingDivSponsor">
             <div className="headingDivSponsorMain">
               {head
@@ -19,7 +19,7 @@ const Merchandise = ({ head, id }) => {
 
           <div id={id}>
             {" "}
-            <div className="pt-20 mb-16 flex justify-center items-center">
+            <div className="pt-20 mb-8 flex justify-center items-center">
               <div className="h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line">
                 <img
                   src="assets/Sponsors/Bobble-AI.jpg"

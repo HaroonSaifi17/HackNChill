@@ -40,7 +40,7 @@ function Event() {
   };
   return (
     <>
-      <div id="event" className="page-layout pt-16">
+      <div id="event" className="page-layout ">
         <div className="card-layout">
           <div className="selected-card-content">
             <h3 className="text-white text-center w-full py-5 px-[5vw]  font-semibold text-5xl font-ubuntu">
@@ -52,8 +52,7 @@ function Event() {
                   className="selected-card-details bg-center bg-cover"
                   style={{ backgroundImage: `url(${selectedCard.img})` }}
                 >
-                  <Card.Body>
-                  </Card.Body>
+                  <Card.Body></Card.Body>
                 </Card>
               </div>
             )}
@@ -79,8 +78,7 @@ function Event() {
                     }`}
                     onClick={() => handleCardClick(card)}
                   >
-                    <Card.Body>
-                    </Card.Body>
+                    <Card.Body></Card.Body>
                   </Card>
                 </div>
               ))}
@@ -93,5 +91,3 @@ function Event() {
 }
 
 export default Event;
-
-

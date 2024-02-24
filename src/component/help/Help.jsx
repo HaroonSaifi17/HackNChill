@@ -22,12 +22,12 @@ function Help() {
         <h3 className="text-white text-4xl text-center">
           Hello there! How can we help?
         </h3>
-        <div className="max-w-[400px] my-10 mx-auto">
+        <div className="max-w-[80vw] my-10 mx-auto">
           <div className=" w-full">
             <div>
               <textarea
                 placeholder="Your message"
-                className="w-[100%] rounded-lg px-4 py-2 h-20"
+                className="w-[100%] rounded-lg px-4 py-2 h-20 resize-none"
                 type="text"
               />
             </div>
@@ -130,7 +130,7 @@ function Help() {
             {answersVisible["themes"] && (
               <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
                 <p>
-                  CYes, there are various themes, including sustainability,
+                  Yes, there are various themes, including sustainability,
                   healthcare, smart education, open innovation, blockchain,
                   cybersecurity, heritage and culture, and robotics.
                 </p>
@@ -155,11 +155,10 @@ function Help() {
             {answersVisible["participants"] && (
               <div className="px-4 py-2  bg-gray-100 rounded-b-md text-gray-500">
                 <p>
-                  Unfortunately, participating as an individual is not allowed
-                  for Hack&Chill. However, you can certainly form a team to join
-                  the hackathon. The minimum team size requirement is 3 members,
-                  so gather your peers and collaborate to make the most out of
-                  this exciting event!
+                  Definitely, participating as an individual is allowed for
+                  Hack&Chill. However, you can certainly form a team to join the
+                  hackathon. So gather your peers and collaborate to make the
+                  most out of this exciting event!
                 </p>
               </div>
             )}{" "}
@@ -206,26 +205,20 @@ function Help() {
                 <p>
                   Yes, there will be mentors available to assist participants
                   during the hackathon. We have a dedicated team of mentors
-                  assigned to provide guidance and support. Additionally, if
-                  you're interested in becoming a mentor, there will be an
-                  application process where you can apply for the mentorship
-                  role.
+                  assigned to provide guidance and support.
                 </p>
               </div>
             )}
           </div>
         </div>
         <p className="text-center">
-          <a
-            className="mx-auto mt-8 inline-block mb-4 text-white underline"
-            href="#"
-          >
+          <p className="mx-auto mt-8 inline-block mb-4 text-white ">
             Need more help?
-          </a>
+          </p>
           <br />
           <a
             className="bg-[#db0000] py-2 px-4 rounded-md text-white mx-auto"
-            href="#"
+            href="mailto:dscadgitm@gmail.com  "
           >
             Contact Us
           </a>

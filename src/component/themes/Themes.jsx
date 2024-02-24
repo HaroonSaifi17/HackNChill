@@ -1,7 +1,7 @@
 import "./Themes.css";
 import React, { useEffect, useRef, useState } from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faLeftLong, faRightLong} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeftLong, faRightLong } from "@fortawesome/free-solid-svg-icons";
 
 function Themes() {
   const themes = [
@@ -75,10 +75,20 @@ function Themes() {
   }, []);
   return (
     <div id="theme" className="relative overflow-hidden">
-      <button className={"themeNavigationButtons left-10"} onClick={()=> scrollRef.current.scrollBy({left:-5, behavior: "smooth"})}>
+      <button
+        className={"themeNavigationButtons left-10"}
+        onClick={() =>
+          scrollRef.current.scrollBy({ left: -5, behavior: "smooth" })
+        }
+      >
         <FontAwesomeIcon icon={faLeftLong} />
       </button>
-      <button className={"themeNavigationButtons right-10"} onClick={()=> scrollRef.current.scrollBy({left:5, behavior: "smooth"})}>
+      <button
+        className={"themeNavigationButtons right-10"}
+        onClick={() =>
+          scrollRef.current.scrollBy({ left: 5, behavior: "smooth" })
+        }
+      >
         <FontAwesomeIcon icon={faRightLong} />
       </button>
       <div className=" py-16 overflow-hidden">
@@ -118,7 +128,13 @@ function Themes() {
                   src={item.img}
                   alt=""
                 />
-                <h3 className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0 text-nowrap mt-3" style={{fontSize: item.title === "Culture and Heritage" ? "1.2rem" : ""}}>
+                <h3
+                  className="bg-white text-[#831010] text-center p-2 text-2xl font-semibold pb-0 text-nowrap mt-3"
+                  style={{
+                    fontSize:
+                      item.title === "Culture and Heritage" ? "1.4rem" : "",
+                  }}
+                >
                   {item.title}
                 </h3>
               </div>

@@ -33,18 +33,17 @@ const Footer = () => {
         </div>
         <div className="footer-menu md:items-start md:gap-4">
           <h2 className="font-semibold text-lg">EXPLORE US!</h2>
-          <a href="mailto:hacknchill1.0@gmail.com">hacknchill1.0@gmail.com</a>
           <div className="footer-icon">
-            <a href="https://www.instagram.com/hacknchill_1.0?igsh=MWIxb2dnMGxlZ25nMQ==">
+            <a href="https://www.instagram.com/hacknchill_1.0">
               <FontAwesomeIcon size="xl" icon={faInstagram} />
             </a>
             {/* <a href="#">
               <FontAwesomeIcon size="xl" icon={faLinkedin} />
             </a> */}
-            <a href="https://x.com/GdscAdgips?t=FfjGzz9JrGp-qNlSXqv_3A&s=09">
+            <a href="https://x.com/GdscAdgips">
               <FontAwesomeIcon size="xl" icon={faXTwitter} />
             </a>
-            <a href="#">
+            <a href="https://medium.com/@gdscadgitm">
               <FontAwesomeIcon size="xl" icon={faMedium} />
             </a>
           </div>

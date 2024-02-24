@@ -25,8 +25,7 @@ function Timeline() {
         <div
           style={{ transform: `translateX(${scrollPosition}px)` }}
           className="train"
-        >
-        </div>
+        ></div>
         <div className="track"></div>
       </div>
     </div>
