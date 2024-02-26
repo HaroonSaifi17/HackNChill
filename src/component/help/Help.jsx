@@ -22,12 +22,12 @@ function Help() {
         <h3 className="text-white text-4xl text-center">
           Hello there! How can we help?
         </h3>
-        <div className="max-w-[80vw] my-10 mx-auto">
+        <div className="max-w-[400px] my-10 mx-auto">
           <div className=" w-full">
             <div>
               <textarea
                 placeholder="Your message"
-                className="w-[100%] rounded-lg px-4 py-2 h-20 resize-none"
+                className="w-[100%] rounded-lg px-4 py-2 h-20 "
                 type="text"
               />
             </div>
@@ -212,9 +212,16 @@ function Help() {
           </div>
         </div>
         <p className="text-center">
-          <p className="mx-auto mt-8 inline-block mb-4 text-white ">
+          {/* <p className="mx-auto mt-8 inline-block mb-4 text-white ">
             Need more help?
-          </p>
+          </p> */}
+          <a
+            className="mx-auto mt-8 inline-block mb-4 text-white underline"
+            href="#"
+          >
+            {" "}
+            Need more help?
+          </a>
           <br />
           <a
             className="bg-[#db0000] py-2 px-4 rounded-md text-white mx-auto"
