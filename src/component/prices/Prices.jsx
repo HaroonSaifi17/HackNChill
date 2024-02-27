@@ -9,14 +9,14 @@ function Prices() {
           PRIZES
         </h3>
         <div className="flex justify-around items-center max-md:flex-col gap-7 mt-12 max-md:mb-0  mb-[200px]">
-          <div className="flex-col flex items-center gap-4 max-md:order-1 order11  order-2">
+          <div className="flex-col flex items-center max-w-[320px] gap-4 max-md:order-1 order11  order-2">
             <div className="inline-block mx-auto  w-48 h-48 border-white border-[12px] rounded-md"></div>
             <h1 className="text-white text-4xl text-center font-semibold mt-2">Winner: $300</h1>
             <p className="text-white text-center  px-2">
               Winners will be awarded with cash prize and Many more surprises for the winners
             </p>
           </div>
-          <div className="mb-[-200px] max-md:mb-0 justify-start flex-col flex gap-4 items-center max-md:order-2  order-1 ">
+          <div className="mb-[-200px] max-md:mb-0  max-w-[320px] justify-start flex-col flex gap-4 items-center max-md:order-2  order-1 ">
             <svg
               viewBox="0 0 100 100"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,7 +34,7 @@ function Prices() {
               Runner Up team will be awarded with cash prize along with gifts too.
             </p>
           </div>
-          <div className="mb-[-200px] flex-col flex items-center gap-4 max-md:mb-0 order-3">
+          <div className="mb-[-200px] flex-col flex items-center  max-w-[320px] gap-4 max-md:mb-0 order-3">
             <div className=" w-48 h-48 border-[#DB0000] border-[12px] inline-block rounded-full"></div>
             <h1 className="text-white text-center text-4xl font-semibold mt-2">3rd Place: $150</h1>
             <p className="text-white text-center px-2">
