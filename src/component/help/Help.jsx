@@ -22,7 +22,7 @@ function Help() {
         <h3 className="text-white text-4xl text-center">
           Hello there! How can we help?
         </h3>
-        <div className="max-w-[400px] my-10 mx-auto">
+        <div className="max-w-[500px] my-10 mx-auto">
           <div className=" w-full">
             <div>
               <textarea

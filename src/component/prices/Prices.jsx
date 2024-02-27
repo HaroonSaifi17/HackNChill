@@ -5,13 +5,14 @@ function Prices() {
   return (
     <div id="prizes" className="prices-bg">
       <div className="max-w-screen-2xl mx-auto px-[5vw] py-16">
-        <h3 className="text-center font-semibold text-white text-5xl font-ubuntu">
+        <h3 className="text-center font-semibold text-white text-4xl font-ubuntu">
           PRIZES
         </h3>
-        <div className="flex justify-around items-center max-md:flex-col gap-7 mt-12 max-md:mb-0  mb-[200px]">
+        <h3 className="text-white text-center text-6xl uppercase mt-4 semibold max-md:text-4xl">Prizes Worth upto 3 Lakhs</h3>
+        <div className="flex justify-around items-center max-md:flex-col gap-7 mt-12 max-md:mb-0  mb-[120px]">
           <div className="flex-col flex items-center max-w-[320px] gap-4 max-md:order-1 order11  order-2">
             <div className="inline-block mx-auto  w-48 h-48 border-white border-[12px] rounded-md"></div>
-            <h1 className="text-white text-4xl text-center font-semibold mt-2">Winner: $300</h1>
+            <h1 className="text-white text-4xl text-center font-semibold mt-2">Winner:  &#8377; 10k</h1>
             <p className="text-white text-center  px-2">
               Winners will be awarded with cash prize and Many more surprises for the winners
             </p>
@@ -29,14 +30,14 @@ function Prices() {
                 strokeWidth="6"
               />
             </svg>
-            <h1 className="text-white text-4xl font-semibold text-center mt-2">2nd Place: $200</h1>
+            <h1 className="text-white text-4xl font-semibold text-center mt-2">2nd Place: &#8377;  7k</h1>
             <p className="text-white text-center px-2">
               Runner Up team will be awarded with cash prize along with gifts too.
             </p>
           </div>
           <div className="mb-[-200px] flex-col flex items-center  max-w-[320px] gap-4 max-md:mb-0 order-3">
             <div className=" w-48 h-48 border-[#DB0000] border-[12px] inline-block rounded-full"></div>
-            <h1 className="text-white text-center text-4xl font-semibold mt-2">3rd Place: $150</h1>
+            <h1 className="text-white text-center text-4xl font-semibold mt-2">3rd Place:  &#8377; 5k </h1>
             <p className="text-white text-center px-2">
               Team acquires Third place will be awarded with cash prize along with surprise gifts
             </p>
