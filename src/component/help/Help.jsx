@@ -22,16 +22,16 @@ function Help() {
         <h3 className="text-white text-4xl text-center">
           Hello there! How can we help?
         </h3>
-        <div className="max-w-[500px] my-10 mx-auto">
-          <div className=" w-full">
+        <div className="max-w-[500px] my-10 mx-auto ">
+          <div className=" w-full rounded-lg ">
             <div>
               <textarea
                 placeholder="Your message"
-                className="w-[100%] rounded-lg px-4 py-2 h-20 "
+                className=" w-[100%] px-4 py-2 h-20  border border-5 border-solid border-image border-gradient border-gradient-slice-1"
                 type="text"
               />
             </div>
-            <div className="flex  items-center justify-end mt-2">
+            <div className="flex  items-center justify-end mt-2 ">
               <a
                 href=""
                 className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-lg"

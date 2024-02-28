@@ -4,3 +4,11 @@
   background-size: cover;
   background-color: gray;
 }
+
+.border-gradient {
+  border-image: linear-gradient(to right, #e50b18, #d334a0, #5d78f1) !important;
+}
+
+.border-gradient-slice-1 {
+  border-image-slice: 1 !important;
+}
