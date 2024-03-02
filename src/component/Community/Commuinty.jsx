@@ -4,7 +4,7 @@ const Commuinty = ({ head, id }) => {
   return (
     <div>
       <div id={id}>
-        <div className="max-w-screen-2xl mx-auto px-[5vw] pb-[4rem] hover:border-t-2 pt-[3rem]">
+        <div className="max-w-screen-2xl mx-auto px-[5vw] pb-[4rem]">
           <div className="headingDivSponsor">
             <div className="headingDivSponsorMain">
               {head

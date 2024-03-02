@@ -22,12 +22,12 @@ function Help() {
         <h3 className="text-white text-4xl text-center">
           Hello there! How can we help?
         </h3>
-        <div className="max-w-[500px] my-10 mx-auto ">
+        <div className="max-w-[700px] my-10 mx-auto ">
           <div className=" w-full rounded-lg ">
             <div>
               <textarea
                 placeholder="Your message"
-                className=" w-[100%] px-4 py-2 h-20  border border-5 border-solid border-image border-gradient border-gradient-slice-1"
+                className=" w-[100%] px-4 py-2 h-25  border border-5 border-solid border-image border-gradient border-gradient-slice-1"
                 type="text"
               />
             </div>
