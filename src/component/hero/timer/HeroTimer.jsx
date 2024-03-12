@@ -6,7 +6,7 @@ function addTrailingZero(number) {
 }
 
 export default function HeroTimer() {
-  const targetDate = "2024-04-06T09:00:00";
+  const targetDate = "2024-04-19T09:00:00";
 
   const calculateTimeLeft = () => {
     const difference = new Date(targetDate) - new Date();
