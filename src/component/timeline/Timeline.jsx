@@ -8,7 +8,7 @@ function Timeline() {
     const targetDiv = document.getElementById("timeline");
     const handleScroll = () => {
       const position = -targetDiv.getBoundingClientRect().top;
-      if (position < 1000 && position > 0) setScrollPosition(position);
+      if (position < 2000 && position > 0) setScrollPosition(position);
     };
     window.addEventListener("scroll", handleScroll);
     return () => {

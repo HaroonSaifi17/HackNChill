@@ -1,5 +1,5 @@
 .timeline-wpr{
-  height: calc(100vh + 1000px);
+  height: calc(100vh + 2000px);
   background-color: black;
 }
 .timeline-wpr>div{
@@ -16,13 +16,16 @@
   background-position:left bottom;
   background-size: contain;
   background-repeat: no-repeat;
-  margin-left: -1000px;
+  margin-left: -2000px;
   width: 2150px;
   height: calc(100vh - 220px);
 }
 .track{
   width: 100vw;
   background-image: url(/timeline/track.png);
-  height: 20px;
+  background-repeat: repeat-x;
+  background-size:  auto 14px;
+  background-position: top;
+  height: 50px;
   bottom: 0;
 }
