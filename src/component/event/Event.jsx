@@ -9,30 +9,30 @@ function Event() {
     id: 1,
     title: "",
     content: "",
-    img: "/assets/Event/HackNSolve.png",
+    img: "/assets/Event/HackNSolve.webp",
   };
   const [selectedCard, setSelectedCard] = useState(initialSelectedCard);
 
   const cards = [
     {
       id: 1,
-      img: "/assets/Event/HackNSolve.png",
+      img: "/assets/Event/HackNSolve.webp",
     },
     {
       id: 2,
-      img: "/assets/Event/Bid-O-Mania.png",
+      img: "/assets/Event/Bid-O-Mania.webp",
     },
     {
       id: 3,
-      img: "/assets/Event/RoboWar.png",
+      img: "/assets/Event/RoboWar.webp",
     },
     {
       id: 4,
-      img: "/assets/Event/GamingArena.png",
+      img: "/assets/Event/GamingArena.webp",
     },
     {
       id: 5,
-      img: "/assets/Event/GuestSpeakerSession.png",
+      img: "/assets/Event/GuestSpeakerSession.webp",
     },
   ];
   const handleCardClick = (card) => {

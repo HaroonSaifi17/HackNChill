@@ -62,8 +62,8 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 
 export default function RegisterNow() {
   return (
-    <ParallaxText baseVelocity={-3}>
-      The code will be with you Always!{" "}
+    <ParallaxText baseVelocity={-5}>
+      <b>•</b> GDSC UTSAV{" "}
     </ParallaxText>
   );
 }

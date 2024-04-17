@@ -54,7 +54,7 @@ function Hero() {
 
   return (
     <div id="home" className="bg-wpr overflow-hidden relative">
-      <div className="px-[5vw] max-w-screen-2xl mx-auto h-[100vh] relative">
+      <div className="px-[5vw] max-w-screen-2xl mx-auto relative">
         <div className="flex gap-4 px-[5vw] w-full justify-end py-3 text-white absolute top-0 left-0 text-xl">
           <div
             className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
@@ -122,27 +122,6 @@ function Hero() {
                 ></div>
               </div>
             </a>
-          </div>
-          <div className="absolute top-0 left-0 w-full h-full"></div>
-        </div>
-        <div className="flex justify-center items-center gap-4 h-full pt-[60px] pb-[35px] flex-col">
-          <div className={"flex align-items-center"}>
-            <img src={"/gdsc.png"} width="60vw" className="mr-2" />
-            <h1 className="text-white text-center text-2xl max-md:text-lg font-semibold float-left">
-              GDSC ADGIPS EXCLUSIVE
-            </h1>
-            &nbsp;
-          </div>
-          <div className="max-w-[600px]">
-            <img src="/assets/Logo1.png" alt="logo" />
-          </div>
-          <div className="flex">
-            <RegisterButton />
-            {/* <button className="ml-3 px-4 py-2 bg-customPurple text-black text-lg hover:bg-white rounded font-semibold ">Apply on Hack2skill</button> */}
-          </div>
-
-          <div>
-            <HeroTimer />
           </div>
         </div>
       </div>
