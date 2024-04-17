@@ -2,7 +2,7 @@ import React from "react";
 
 
 const SponsorCard = ({imgName, alt, className}) => (
-    <div className={"h-44 w-80 lg:w-80 lg:h-44  cursor-pointer bg-line " + className}>
+    <div className={"h-44 w-80 lg:w-80 lg:h-44 cursor-pointer bg-line " + className}>
       <img
           src={imgName}
           alt={alt}

@@ -53,84 +53,86 @@ function Hero() {
   };
 
   return (
-    <div id="home" className="bg-wpr overflow-hidden relative">
-      <div className="px-[5vw] max-w-screen-2xl mx-auto relative">
+      <>
         <div className="flex gap-4 px-[5vw] w-full justify-end py-3 text-white absolute top-0 left-0 text-xl">
           <div
-            className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
-              navStatus ? "right-0" : "-right-[60vw]"
-            }`}
+              className={`max-md:fixed max-md:w-[60vw] max-md:text-lg flex-1 z-10 max-md:h-full max-md:bg-[#1a1a1a] max-md:flex-col items-center max-md:justify-center max-md:shadow flex gap-4 justify-between duration-100 max-md:top-0 ${
+                  navStatus ? "right-0" : "-right-[60vw]"
+              }`}
           >
             <a
-              className="hover:scale-[1.1] duration-500 "
-              onClick={toggleNav}
-              href="#home"
+                className="hover:scale-[1.1] duration-500 "
+                onClick={toggleNav}
+                href="#home"
             >
               Home
             </a>
             <a
-              className="hover:scale-[1.1] duration-500 "
-              onClick={toggleNav}
-              href="#theme"
+                className="hover:scale-[1.1] duration-500 "
+                onClick={toggleNav}
+                href="#theme"
             >
               Theme
             </a>
             <a
-              className="hover:scale-[1.1] duration-500 "
-              onClick={toggleNav}
-              href="#event"
+                className="hover:scale-[1.1] duration-500 "
+                onClick={toggleNav}
+                href="#event"
             >
               Event
             </a>
             <a
-              className="hover:scale-[1.1] duration-500 "
-              onClick={toggleNav}
-              href="#sponsor"
+                className="hover:scale-[1.1] duration-500 "
+                onClick={toggleNav}
+                href="#sponsor"
             >
               Sponsor
             </a>
             <a
-              className="hover:scale-[1.1] duration-500 "
-              onClick={toggleNav}
-              href="#help"
+                className="hover:scale-[1.1] duration-500 "
+                onClick={toggleNav}
+                href="#help"
             >
               FAQs
             </a>
           </div>
           <div className="md:ml-[-18px]">
             <a
-              onClick={toggleNav}
-              className="hidden max-md:flex  items-center z-10  relative"
+                onClick={toggleNav}
+                className="hidden max-md:flex  items-center z-10  relative"
             >
               <div className="w-10  flex flex-col justify-center gap-2 items-end">
                 <div
-                  className={`h-1 rounded-md w-full  duration-100 bg-white ${
-                    navStatus ? "rotate-45 translate-y-3" : ""
-                  }`}
+                    className={`h-1 rounded-md w-full  duration-100 bg-white ${
+                        navStatus ? "rotate-45 translate-y-3" : ""
+                    }`}
                 ></div>
                 <div
-                  className={`h-1 w-[75%] rounded-md  duration-100${
-                    navStatus ? "bg-transparent" : " bg-white "
-                  }`}
+                    className={`h-1 w-[75%] rounded-md  duration-100${
+                        navStatus ? "bg-transparent" : " bg-white "
+                    }`}
                 ></div>
                 <div
-                  className={`h-1 rounded-md bg-white  duration-100 ${
-                    navStatus
-                      ? "-rotate-45 w-[100%] -translate-y-3 duration-100"
-                      : " w-[50%] "
-                  }`}
+                    className={`h-1 rounded-md bg-white  duration-100 ${
+                        navStatus
+                            ? "-rotate-45 w-[100%] -translate-y-3 duration-100"
+                            : " w-[50%] "
+                    }`}
                 ></div>
               </div>
             </a>
           </div>
         </div>
-      </div>
-      <div className="absolute bottom-0 flex border-black border-2">
-        <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
-          <RegisterNow />
-        </a>
-      </div>
-    </div>
+        <div id="home" className="bg-wpr overflow-hidden relative md:mt-16">
+
+          <div className="absolute bottom-0 flex border-black border-2">
+            <a className="bg-white text-red-700 inline-block cursor-pointer whitespace-nowrap py-[2px] text-lg ">
+              <RegisterNow/>
+            </a>
+          </div>
+        </div>
+      </>
+
   );
 }
 

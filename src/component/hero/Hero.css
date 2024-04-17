@@ -1,14 +1,24 @@
 .bg-wpr {
-  background-image: url("/assets/HeroBackgroundNew.webp");
-  aspect-ratio: 1280/720;
+  background-image: url("/assets/HeroBackgroundSmall.webp");
+  aspect-ratio: 486/1662;
+
   background-position: center;
   background-size: cover;
   background-color: white;
 }
 
+@screen sm {
+  .bg-wpr {
+    background-image: url("/assets/HeroBackground.gif");
+    aspect-ratio: 1280/720;
+  }
+
+}
+
 .animate1 {
   animation: moveleft 40s linear infinite;
 }
+
 @keyframes moveleft {
   0% {
     transform: translateX(0);

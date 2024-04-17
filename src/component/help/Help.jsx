@@ -1,14 +1,19 @@
 import "./Help.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useState } from "react";
+import React, {useRef, useState} from "react";
 import {
   faFileInvoice,
   faWrench,
   faChevronDown,
 } from "@fortawesome/free-solid-svg-icons";
+import {sendForm} from "@emailjs/browser";
+import {Alert} from "react-bootstrap";
 
 function Help() {
   const [answersVisible, setAnswersVisible] = useState({});
+  const [inputValue, setInputValue] = useState("");
+  const formRef = useRef(null);
+  const [sendEmailSuccess, setSendEmailSuccess] = useState(null);
 
   const toggleAnswer = (question) => {
     setAnswersVisible((prevState) => ({
@@ -16,6 +21,21 @@ function Help() {
       [question]: !prevState[question],
     }));
   };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    sendForm('service_cfqbgtu', 'template_uvi4g37', formRef.current, '49d2lQplNu6mw181N')        .then((result) => {
+          console.log(result.text);
+          console.log("message sent!!");
+          setInputValue("");
+          setSendEmailSuccess(true);
+
+        }, (error) => {
+          console.log(error.text);
+          setSendEmailSuccess(false);
+        });
+  };
+
   return (
     <div id="help" className="help-wpr">
       <div className="px-[5vw] py-16 mx-auto max-w-screen-2xl">
@@ -23,23 +43,28 @@ function Help() {
           Hello there! How can we help?
         </h3>
         <div className="max-w-[700px] my-10 mx-auto ">
-          <div className=" w-full rounded-lg ">
-            <div>
+          <form ref={formRef} className=" w-full rounded-lg ">
               <textarea
                 placeholder="Your message"
+                value={inputValue}
+                onChange={e => setInputValue(e.target.value)}
                 className=" w-[100%] px-4 py-2 h-25  border border-5 border-solid border-image border-gradient border-gradient-slice-1"
-                type="text"
               />
-            </div>
-            <div className="flex  items-center justify-end mt-2 ">
-              <a
-                href=""
+            {(sendEmailSuccess === true) ?
+                <Alert variant={"success"} dismissible>
+                  Message sent successfully!
+                </Alert> : (sendEmailSuccess === false) ?
+                <Alert variant={"danger"} dismissible>
+                  There was some error while sending your message!
+                </Alert> : null
+            }
+              <button
+                onClick={sendEmail}
                 className="flex items-center justify-center bg-[#db0000] py-1 text-white px-4 rounded-lg"
               >
                 Send
-              </a>
-            </div>
-          </div>
+              </button>
+          </form>
           <div className="w-full duration-500 overflow-hidden  bg-white rounded-lg mt-5">
             <p className="p-2 px-4">
               <FontAwesomeIcon
