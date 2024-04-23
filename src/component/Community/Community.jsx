@@ -48,6 +48,7 @@ const Community = ({ head, id }) => {
 
           <div className="flex justify-center items-center flex-wrap gap-4 mt-4">
             <div className="flex flex-wrap gap-4 items-center justify-center">
+                <SponsorCard imgName={"assets/community/Hack2Skill.jpeg"} alt={"HACK2SKILL"} />
                 <SponsorCard imgName={"assets/community/GDSC_DCEV.png"} alt={"GDSC DCEV"} />
                 <SponsorCard imgName={"assets/community/GDSC_IGDTUW.png"} alt={"GDSC IGDTUW"} />
                 <SponsorCard imgName={"assets/community/IIITD.jpeg"} alt={"IIITD"} />
